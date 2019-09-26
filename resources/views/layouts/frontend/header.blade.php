@@ -30,19 +30,21 @@
                         </div>
                     </form>
                     <!-- loginLinksList -->
+                    
                     <ul class="list-unstyled loginLinksList loginLinksList02 text-capitalize d-flex mb-0">
+                        
                     @guest
-                        <li class="nav-item hasIcon">
+                        <li class="hasIcon">
                             <i class="ei_icon_lock icn"><span class="sr-only">icon</span></i>
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }} </a>
+                            <a class="d-none d-md-block" href="{{ route('login') }}">{{ __('Login') }} </a>
                         </li>
                         @if (Route::has('register'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <li class="d-none d-md-block">
+                                <a  href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @endif
                     @else
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown ">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
@@ -93,48 +95,43 @@
                         <div class="collapse navbar-collapse mainNavCollapse mainNavCollapse02" id="pageMainNavCollapse">
                             <!-- pageMainNavigation navbar nav -->
                             <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end">
-                                <li class="nav-item active">
+                                <li class="nav-item @if (\Request::is('/')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/"  aria-haspopup="true" >Home</a>
                                 </li>
 
-                                <li class="nav-item">
+                                <li class="nav-item @if (\Request::is('products*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/products"  aria-haspopup="true" >Products</a>
                                 </li>
                                 
-                                <li class="nav-item">
+                                <li class="nav-item @if (\Request::is('blog*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/blog"  aria-haspopup="true" >Blog</a>
                                 </li>
                                 
                                 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Discover</a>
-                                    <!-- mainNavDropdown dropdown menu -->
-                                    <div class="dropdown-menu mainNavDropdown text-uppercase">
-                                        <!-- navDropdownList -->
-                                        <ul class="list-unstyled navDropdownList">            
-                                            <li class="nav-item">
-                                                <a class="dropdown-item" href="/video-gallery">Video gallery </a>
-                                            </li>
-                                            
-                                            <li class="nav-item">
-                                                <a class="dropdown-item" href="/carpenter-pathshaala">Carpenter pathshala</a>
-                                            </li>
-                                            
-                                            <li class="nav-item">
-                                                <a class="dropdown-item" href="/display-and-design">Dispay and desgin </a>
-                                            </li>
-                                            
-                                            <li class="nav-item">
-                                                <a class="dropdown-item"  href="/channel-partnership">Channel Partnership</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                               
 
-                                <li class="nav-item">
+                                <li class="nav-item @if (\Request::is('careers*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/careers"  aria-haspopup="true" >Careers</a>
                                 </li>
                                 
+                            </ul>
+                            <br>
+                            <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end">            
+                                <li class="nav-item @if (\Request::is('video-gallery*')) active @endif">
+                                    <a class="nav-link fwMedium text-uppercase " href="/video-gallery">Video gallery </a>
+                                </li>
+                                
+                                <li class="nav-item @if (\Request::is('carpenter-pathshaala*')) active @endif">
+                                    <a class="nav-link fwMedium text-uppercase " href="/carpenter-pathshaala">Carpenter pathshala</a>
+                                </li>
+                                
+                                <li class="nav-item  @if (\Request::is('display-and-design*')) active @endif">
+                                    <a class="nav-link fwMedium text-uppercase " href="/display-and-design">Dispay and desgin </a>
+                                </li>
+                                
+                                <li class="nav-item  @if (\Request::is('channel-partnership*')) active @endif">
+                                    <a class="nav-link fwMedium text-uppercase "  href="/channel-partnership">Channel Partnership</a>
+                                </li>
                             </ul>
                         </div>
                     </nav>

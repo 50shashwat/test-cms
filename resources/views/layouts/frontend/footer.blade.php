@@ -1,6 +1,6 @@
 
 <!-- pageFooterAreaWrap -->
-<div class="pageFooterAreaWrap position-relative text-center text-sm-left" data-parallax="scroll" data-image-src="images/img01.jpg">
+<div class="pageFooterAreaWrap position-relative text-center text-sm-left" data-parallax="scroll">
     <!-- pageFooterWrapHolder -->
     <div class="container position-relative pageFooterWrapHolder">
         <!-- subscribeAsideBlock -->

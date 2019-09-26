@@ -18,6 +18,8 @@
 	<title>Harrison Locks</title>
 	<!-- include the site bootstrap stylesheet -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<style>
+	</style>
 	<!-- include the site Fontsicon stylesheet -->
 	<link rel="stylesheet" href="css/fontsicon.css">
 	<!-- include the site Plugins stylesheet -->
