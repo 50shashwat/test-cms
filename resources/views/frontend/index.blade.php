@@ -80,6 +80,33 @@
                 <img class="sr-only" src="images/img03.jpg" alt="image description">
             </span>
         </div>
+
+        <!-- bannerSliderSlide -->
+        <div class="bannerSliderSlide">
+            <!-- bannerSlideHolder -->
+            <div class="container bannerSlideHolder bannerSlideHolder02 position-relative">
+                <div class="align">
+                    <!-- bannerSlideHeader -->
+                    <header class="bannerSlideHeader">
+                        <h1 class="text-uppercase fwSemiBold fontBase"> Kitchen Accessories</h1>
+                        <p>A wide range of kitchen accessories can be purchased from our stores</p>
+                    </header>
+                    <!-- btnHolder -->
+                    <footer class="btnHolder d-flex flex-wrap justify-content-center">
+                        <a href="javascript:void(0);" class="btn btnThemeOutine text-uppercase" data-hover="Learn More">
+                            <span class="d-block btnText">Learn More</span>
+                        </a>
+                        <a href="contact2.html" class="btn btnTheme text-uppercase" data-hover="Contact Us">
+                            <span class="d-block btnText">Contact Us</span>
+                        </a>
+                    </footer>
+                </div>
+            </div>
+            <!-- bannerBlockSlideBg -->
+            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/img04.jpg);">
+                <img class="sr-only" src="images/img04.jpg" alt="image description">
+            </span>
+        </div>
     </section>
     
     <!-- wcuBlock -->
