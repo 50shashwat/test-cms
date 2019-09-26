@@ -20,15 +20,15 @@
                         <a href="javascript:void(0);" class="btn btnThemeOutine text-uppercase" data-hover="Learn More">
                             <span class="d-block btnText">Learn More</span>
                         </a>
-                        <a href="contact2.html" class="btn btnTheme text-uppercase" data-hover="Contact Us">
+                        <a href="/contact-us" class="btn btnTheme text-uppercase" data-hover="Contact Us">
                             <span class="d-block btnText">Contact Us</span>
                         </a>
                     </footer>
                 </div>
             </div>
             <!-- bannerBlockSlideBg -->
-            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/img17.jpg);">
-                <img class="sr-only" src="images/img17.jpg" alt="image description">
+            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/img01.jpg);">
+                <img class="sr-only" src="images/img01.jpg" alt="image description">
             </span>
         </div>
         <!-- bannerSliderSlide -->
@@ -50,8 +50,8 @@
                 </div>
             </div>
             <!-- bannerBlockSlideBg -->
-            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/img01.jpg);">
-                <img class="sr-only" src="images/img01.jpg" alt="image description">
+            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/img02.jpg);">
+                <img class="sr-only" src="images/img02.jpg" alt="image description">
             </span>
         </div>
         <!-- bannerSliderSlide -->
@@ -76,8 +76,8 @@
                 </div>
             </div>
             <!-- bannerBlockSlideBg -->
-            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/img01.jpg);">
-                <img class="sr-only" src="images/img01.jpg" alt="image description">
+            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/img03.jpg);">
+                <img class="sr-only" src="images/img03.jpg" alt="image description">
             </span>
         </div>
     </section>
