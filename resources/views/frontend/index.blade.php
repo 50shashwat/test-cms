@@ -176,10 +176,10 @@
                         <p>Do call us here</p>
                     </div>
                     <div class="col-12 col-md-4 text-md-right">
-                        <a href="tel:+91 931 014 2402" class="btn btnTheme btnThemeWhiteInverse fontRoboto btnRoudedLarge" data-hover="+91 931 014 2402">
+                        <a href="tel:18001035795" class="btn btnTheme btnThemeWhiteInverse fontRoboto btnRoudedLarge" data-hover="+91 931 014 2402">
                             <span class="btnText d-block">
                                 <i class="ei_icon_phone btnIcn"><span class="sr-only">icon</span></i>
-                                <span>+91 931 014 2402</span>
+                                <span>1-800-103-5795</span>
                             </span>
                         </a>
                     </div>
@@ -209,7 +209,7 @@
                             <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">View All</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="vintage-tab" data-toggle="tab" href="#vintage" role="tab" aria-controls="vintage" aria-selected="false">Modular Kitchen</a>
+                            <a class="nav-link" id="vintage-tab" data-toggle="tab" href="#vintage" role="tab" aria-controls="vintage" aria-selected="false">Kitchen Accesories</a>
                         </li>
                     
                     </ul>

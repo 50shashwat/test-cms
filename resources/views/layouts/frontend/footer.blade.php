@@ -89,7 +89,7 @@
                     <!-- logo -->
                     <div class="logo">
                         <a href="home.html">
-                            <img src="images/logo.png" alt="kitzen">
+                            <img src="images/logo.png" alt="Harrison Locks">
                         </a>
                     </div>
                     <!-- ftAddress -->

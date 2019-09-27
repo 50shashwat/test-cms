@@ -1,11 +1,12 @@
 /* site responsive styles */
 /* query sm (576) styles */
 @media (min-width: 576px) {
+  
   .logo.logo04 {
     margin-top: 10px;
   }
   .pageMainNavOpener.pageMainNavOpener04 {
-    margin-top: 6px;
+    margin-top: 30px;
   }
   .mainNavCollapse.navbar-collapse.mainNavCollapse03, .mainNavCollapse.navbar-collapse.mainNavCollapse05 {
     width: 100%;
@@ -110,6 +111,10 @@
   }
   .cshColumnFull {
     width: 432px;
+  }
+  .navbar-toggler .pageMainNavOpener .pageMainNavOpener02
+  {
+    margin-top:30px;
   }
 }
 
@@ -820,7 +825,7 @@
     padding-bottom: 0;
   }
   .pageHeaderHolder.pageHeaderHolder02 {
-    padding: 26px 20px 0;
+    padding: 10px 20px 10px
   }
   .pageHeaderHolder.pageHeaderHolder03 {
     padding-top: 24px;
@@ -1656,6 +1661,8 @@
   }
   .pageMainNavigation.navbar-nav.pageMainNavigation02 .nav-link {
     padding-bottom: 27px;
+    font-size: 14px;
+    margin-top: 20px;
   }
   .pageMainNavigation.navbar-nav.pageMainNavigation03 .nav-item, .pageMainNavigation.navbar-nav.pageMainNavigation05 .nav-item {
     margin-right: 24px;

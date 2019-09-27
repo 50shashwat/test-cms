@@ -7,9 +7,9 @@
                     <!-- topBarContactList -->
                     <ul class="list-unstyled topBarContactList topBarContactList02 align-items-center mb-0 d-none d-md-flex">
                         <li>
-                            <a href="tel:12345678910">
+                            <a href="tel:18001035795">
                                 <i class="fas fa-phone fa-flip-horizontal icn"><span class="sr-only">icon</span></i>
-                                <span class="d-none d-lg-inline">+91 931 014 2402</span>
+                                <span class="d-none d-lg-inline">1-800-103-5795</span>
                             </a>
                         </li>
                         <li>
@@ -115,7 +115,7 @@
                                 </li>
                                 
                             </ul>
-                            <br>
+                            
                             <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end">            
                                 <li class="nav-item @if (\Request::is('video-gallery*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/video-gallery">Video gallery </a>

@@ -118,7 +118,7 @@
 .prjctDescrColumn.hover .h3 a,
 .reviewsList h3 a:hover,
 .reviewsList .h3 a:hover {
-  color: #39b54a;
+  color: #232630;
 }
 
 /* selectors with theme's background color property */
@@ -198,7 +198,7 @@
 .phadrList li.hover .icnWrap,
 .hiwStepsList > li.hover:before,
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: #39b54a;
+  background-color: #232630;
 }
 
 /* selectors with theme's border color property */
@@ -240,5 +240,5 @@
 .swwdColumnsSliderType2 .slick-arrow,
 .rpPosterSlider .slick-arrow,
 .phadrList li.hover .icnWrap {
-  border-color: #39b54a;
+  border-color: #232630;
 }
