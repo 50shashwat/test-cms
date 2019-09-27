@@ -33,58 +33,73 @@
                 <div class="col col-12 col-md-9 col-lg-6 order-lg-2">
                     <!-- ftLinksNav -->
                     <nav class="ftLinksNav">
+                            <h3 class="text-white">Important Helpline Numbers</h3>
                         <div class="row">
-                            <div class="col-12 col-sm-6">
-                                <h3 class="text-white">Information</h3>
-                                <ul class="list-unstyled">
-                                    <li><a href="javascript:void(0);">Term &amp; Condition</a></li>
-                                    <li><a href="javascript:void(0);">Privacy policy</a></li>
-                                    <li><a href="javascript:void(0);">Customer Service</a></li>
-                                    <li><a href="javascript:void(0);">FAQs</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <h3 class="text-white">Quick Link</h3>
-                                <ul class="list-unstyled">
-                                    <li><a href="javascript:void(0);">Latest News</a></li>
-                                    <li><a href="javascript:void(0);">Products</a></li>
-                                    <li><a href="javascript:void(0);">Best Design</a></li>
-                                    <li><a href="javascript:void(0);">Customs Services</a></li>
-                                </ul>
-                            </div>
+                                <div class="col-md-6">
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th>Department</th><th>Contact Number</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Branding Dept.</td><td>9310142402</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Claim Dept.</td><td>9355029575</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Commercial Dept.</td><td>9310142408</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C.R.M. Soft Related</td><td>9355029571</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Central Dispatch Related</td><td>9310142411</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Finance Dept.</td><td>9355029574</td>
+                                    </tr>
+                                    
+                                </table>
+                                </div>
+                                <div class="col-md-6">
+                                    <table class="table table-striped">
+                                        <tr>
+                                                <th>Department</th><th>Contact Number</th>
+                                        </tr>
+                                            <tr>
+                                                    <td>Emergency Contact</td><td>9301042407</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Institutional Queries</td><td>9355029576</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Monthly Sales Report</td><td>8076677900</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>New Sales Queries</td><td>9310142402</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sales Related</td><td>9310142407</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Technical Complaint/Queries</td><td>9355015108</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Trade Aspirants</td><td>9310142407</td>
+                                                </tr>
+                                    </table>
+                                </div>
+                           
                         </div>
                     </nav>
                 </div>
+                
                 <div class="col col-12 col-md-3 col-lg-2 order-lg-3 text-center text-md-left">
-                    <h3 class="text-white">Social</h3>
+                    <h3 class="text-white">Find Us</h3>
                     <!-- ftSocialLinks -->
-                    <ul class="list-unstyled socialNetworks ftSocialLinks">
-                        <li>
-                            <a href="javascript:void(0);">
-                                <i class="fab fa-facebook-f icn text-center"><span class="sr-only">icon</span></i>
-                                <strong class="text font-weight-normal">Facebook</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">
-                                <i class="fab fa-twitter icn text-center"><span class="sr-only">icon</span></i>
-                                <strong class="text font-weight-normal">Twitter</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">
-                                <i class="fab fa-pinterest icn text-center"><span class="sr-only">icon</span></i>
-                                <strong class="text font-weight-normal">Pinterest</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">
-                                <i class="fab fa-instagram icn text-center"><span class="sr-only">icon</span></i>
-                                <strong class="text font-weight-normal">instagram</strong>
-                            </a>
-                        </li>
-                    </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14002.485472720467!2d77.1338362!3d28.6710537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e54092bb285b3e1!2sHarrison%20Locks!5e0!3m2!1sen!2sin!4v1569585853540!5m2!1sen!2sin" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
+
                 <div class="col col-12 col-lg-4 order-lg-1 text-center text-lg-left position-static">
                     <!-- logo -->
                     <div class="logo">

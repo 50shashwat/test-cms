@@ -8,10 +8,10 @@
 	<!-- set the HandheldFriendly -->
 	<meta name="HandheldFriendly" content="True">
 	<!-- set the description -->
-	<meta name="description" content="Kitzen | Modern Kitchen HTML Template">
+	<meta name="description" content="Harrison Locks">
 	<!-- set the Keyword -->
 	<meta name="keywords" content>
-	<meta name="author" content="Kitzen | Modern Kitchen HTML Template">
+	<meta name="author" content="Harrison Locks">
 	<!-- include poppins google font cdn link -->
 	<link href="css/css.css" rel="stylesheet">
 	<!-- set the page title -->
@@ -45,10 +45,11 @@
 		
 	</div>
 	<!-- include jQuery library -->
-	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="{{asset('js/jquery-3.3.1.min.js') }} "></script>
 	<!-- include Plugins JavaScript -->
-	<script src="js/plugins.js"></script>
+	<script src="{{asset('js/plugins.js') }}"></script>
 	<!-- include custom JavaScript -->
-	<script src="js/jquery.main.js"></script>
+	<script src="{{asset('js/jquery.main.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 </body>
 </html>

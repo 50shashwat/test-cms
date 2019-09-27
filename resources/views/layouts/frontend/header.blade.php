@@ -104,7 +104,7 @@
                                 </li>
                                 
                                 <li class="nav-item @if (\Request::is('blog*')) active @endif">
-                                    <a class="nav-link fwMedium text-uppercase " href="/blog"  aria-haspopup="true" >Blog</a>
+                                    <a class="nav-link fwMedium text-uppercase " href="/blog"  aria-haspopup="true" >Blog / Announcements</a>
                                 </li>
                                 
                                 
@@ -126,7 +126,7 @@
                                 </li>
                                 
                                 <li class="nav-item  @if (\Request::is('display-and-design*')) active @endif">
-                                    <a class="nav-link fwMedium text-uppercase " href="/display-and-design">Dispay and desgin </a>
+                                    <a class="nav-link fwMedium text-uppercase " href="/display-and-design">Display and desgin </a>
                                 </li>
                                 
                                 <li class="nav-item  @if (\Request::is('channel-partnership*')) active @endif">
