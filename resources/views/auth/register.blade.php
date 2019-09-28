@@ -98,6 +98,11 @@
                                 </button>
                             </div>
                         </div>
+
+                        <div class="form-group row mb-0" style="text-align:center;margin-top:30px">
+                            <a href="/login" style="margin:auto">Already Registered with us? Login to view the products </a>
+                        </div>
+
                     </form>
                 </div>
             </div>

@@ -33,63 +33,25 @@
                 <div class="col col-12 col-md-9 col-lg-6 order-lg-2">
                     <!-- ftLinksNav -->
                     <nav class="ftLinksNav">
-                            <h3 class="text-white">Important Helpline Numbers</h3>
                         <div class="row">
-                                <div class="col-md-6">
-                                <table class="table table-striped">
-                                    <tr>
-                                        <th>Department</th><th>Contact Number</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Branding Dept.</td><td>9310142402</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Claim Dept.</td><td>9355029575</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Commercial Dept.</td><td>9310142408</td>
-                                    </tr>
-                                    <tr>
-                                        <td>C.R.M. Soft Related</td><td>9355029571</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Central Dispatch Related</td><td>9310142411</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Finance Dept.</td><td>9355029574</td>
-                                    </tr>
-                                    
-                                </table>
-                                </div>
-                                <div class="col-md-6">
-                                    <table class="table table-striped">
-                                        <tr>
-                                                <th>Department</th><th>Contact Number</th>
-                                        </tr>
-                                            <tr>
-                                                    <td>Emergency Contact</td><td>9301042407</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Institutional Queries</td><td>9355029576</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Monthly Sales Report</td><td>8076677900</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>New Sales Queries</td><td>9310142402</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Sales Related</td><td>9310142407</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Technical Complaint/Queries</td><td>9355015108</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Trade Aspirants</td><td>9310142407</td>
-                                                </tr>
-                                    </table>
-                                </div>
-                           
+                            <div class="col-12 col-sm-6">
+                                <h3 class="text-white">Information</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="javascript:void(0);">Term &amp; Condition</a></li>
+                                    <li><a href="javascript:void(0);">Privacy policy</a></li>
+                                    <li><a href="javascript:void(0);">Customer Service</a></li>
+                                    <li><a href="javascript:void(0);">FAQs</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <h3 class="text-white">Quick Link</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="/helpline-numbers">Helpline Numbers</a></li>
+                                    <li><a href="/products">Products</a></li>
+                                    <li><a href="/about-us">About Us</a></li>
+                                    <li><a href="/contact-us">Contact Us</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </nav>
                 </div>

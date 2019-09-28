@@ -44,22 +44,18 @@
                             </li>
                         @endif
                     @else
-                        <li class="nav-item dropdown ">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    @csrf
-                                </form>
-                            </div>
+                        <li class="nav-item  ">
+                                {{ Auth::user()->name }} 
+                        </li>
+                        <li>
+                            <a href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                              document.getElementById('logout-form').submit();">
+                                 {{ __('Logout') }}
+                             </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
                         </li>
                     @endguest
 
@@ -81,9 +77,6 @@
                 <!-- pageNavHolder -->
                 <div class="pageNavHolder alignright d-flex justify-content-end align-items-md-start">
                     <!-- topBarSearchFormOpener -->
-                    <a class="topBarSearchFormOpener topBarSearchFormOpener02 d-flex d-md-none align-items-center justify-content-center flex-shrink-0" data-toggle="collapse" href="#searhFormCollpase" role="button" aria-expanded="false" aria-controls="searhFormCollpase">
-                        <i class="fas fa-search"><span class="sr-only">icon</span></i>
-                    </a>
                     
                     <!-- pageNav navbar -->
                     <nav id="pageNav" class="navbar navbar-expand-lg order-lg-1">

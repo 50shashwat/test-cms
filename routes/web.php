@@ -25,8 +25,9 @@ Route::get('/careers', 'StaticController@careers')->name('careers');
 Route::get('/video-gallery', 'GalleryController@video')->name('video-gallery');
 Route::get('/carpenter-pathshaala', 'StaticController@carpenterpathshala')->name('carpenter-pathshala');
 Route::get('/display-and-design', 'StaticController@displaydisign')->name('carpenter-pathshala');
-Route::get('/blog', 'BlogController@index');
-Route::get('/channel-partnership', 'StaticController@channelpartnership');
+Route::get('/blog', 'BlogController@index')->name('blog');
+Route::get('/channel-partnership', 'StaticController@channelpartnership')->name('channel-partner');
+Route::get('/helpline-numbers', 'StaticController@helpline')->name('helpline');
 
 
 Route::prefix('admin')->group(function(){

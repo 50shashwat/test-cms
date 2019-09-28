@@ -64,6 +64,10 @@
                                 @endif
                             </div>
                         </div>
+
+                        <div class="form-group row mb-0" style="text-align:center;margin-top:30px">
+                            <a href="/register" style="margin:auto">Don't have Account? SignUp to view products </a>
+                        </div>
                     </form>
                 </div>
             </div>

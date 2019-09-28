@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.frontend.main')
 
 @section('content')
 <div class="container">
@@ -51,8 +51,8 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Reset Password') }}
+                                <button type="submit" class="btn btnTheme text-uppercase" data-hover="Reset Now">
+                                        <span class="d-block btnText"> {{ __('Reset Password') }}</span>
                                 </button>
                             </div>
                         </div>

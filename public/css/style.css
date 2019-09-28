@@ -11304,3 +11304,9 @@ hr {
     transform: translateY(0);
   }
 }
+
+
+.table tr:hover, .table-stiped tr:hover{
+  cursor: pointer;
+  background: #ccc;
+}

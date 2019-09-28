@@ -56,7 +56,7 @@ class Handler extends ExceptionHandler
                     return redirect(route('admin.login'));
                     break;
                 default:
-                    return redirect(route('login'));
+                    return redirect(route('register'));
                     break;
             }
         }

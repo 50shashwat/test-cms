@@ -13,23 +13,26 @@
 	<meta name="keywords" content>
 	<meta name="author" content="Harrison Locks">
 	<!-- include poppins google font cdn link -->
-	<link href="css/css.css" rel="stylesheet">
+	<link href="{{ asset('css/css.css') }}" rel="stylesheet">
 	<!-- set the page title -->
 	<title>Harrison Locks</title>
 	<!-- include the site bootstrap stylesheet -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
 	<style>
+		.navbar-toggler:not(:disabled):not(.disabled){
+			margin-top:30px;
+		}
 	</style>
 	<!-- include the site Fontsicon stylesheet -->
-	<link rel="stylesheet" href="css/fontsicon.css">
+	<link rel="stylesheet" href="{{ asset('css/fontsicon.css') }}">
 	<!-- include the site Plugins stylesheet -->
-	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="{{ asset('css/plugins.css') }}">
 	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 	<!-- include theme color setting stylesheet -->
-	<link rel="stylesheet" href="css/colors.css">
+	<link rel="stylesheet" href="{{ asset('css/colors.css') }}">
 	<!-- include the site responsive stylesheet -->
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 </head>
 <body>
 	<!-- pageWrapper -->

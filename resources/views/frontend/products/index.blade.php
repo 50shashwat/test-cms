@@ -1,5 +1,7 @@
 @extends('layouts.frontend.main')
 
 @section('content')
-    <h2>Products Page</h2>
+    <div class="container" style="text-align:center;padding:40px">
+        <h2>Will Be Updated Soon</h2>
+    </div>
 @endsection

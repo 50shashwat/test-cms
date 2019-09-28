@@ -29,4 +29,8 @@ class StaticController extends Controller
     public function channelpartnership(){
         return view('frontend.static.channelpartnership');
     }
+
+    public function helpline(){
+        return view('frontend.static.helpline');
+    }
 }
