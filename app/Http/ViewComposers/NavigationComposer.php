@@ -4,7 +4,7 @@ namespace App\Http\ViewComposers;
 
 use Illuminate\View\View;
 use App\Repositories\UserRepository;
-use App\Navigation;
+use App\Menu;
 
 class NavigationComposer
 {
@@ -16,8 +16,8 @@ class NavigationComposer
      */
     public function compose(View $view)
     {
-        $navigations = Navigation::orderBy('name')->get();
-        $view->with('navigations', $navigations);
+        $navigations = Menu::where('is_primary','true')->first()->menuItems()->toJson();
+        $view->with('navigations', json_decode($navigations, true) );
     }
 
 }

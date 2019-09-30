@@ -38,8 +38,8 @@
                 <div class="align">
                     <!-- bannerSlideHeader -->
                     <header class="bannerSlideHeader">
-                        <h1 class="text-uppercase fwSemiBold fontBase">Launching Kitchen Accessories</h1>
-                        <p>A wide range of kitchen accessories can be purchased from our stores.</p>
+                        <h1 class="text-uppercase fwSemiBold fontBase">Launching RM 600 Door Closer</h1>
+                        <p>Suitable for wooden and aluminium doors.</p>
                     </header>
                     <!-- btnHolder -->
                     <footer class="btnHolder d-flex flex-wrap justify-content-center">
@@ -176,7 +176,7 @@
                         <p>Do call us here</p>
                     </div>
                     <div class="col-12 col-md-4 text-md-right">
-                        <a href="tel:18001035795" class="btn btnTheme btnThemeWhiteInverse fontRoboto btnRoudedLarge" data-hover="+91 931 014 2402">
+                        <a href="tel:18001035795" class="btn btnTheme btnThemeWhiteInverse fontRoboto btnRoudedLarge" data-hover="1-800-103-5795">
                             <span class="btnText d-block">
                                 <i class="ei_icon_phone btnIcn"><span class="sr-only">icon</span></i>
                                 <span>1-800-103-5795</span>
@@ -208,6 +208,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">View All</a>
                         </li>
+                        <li class="nav-item">
+                                <a class="nav-link active" id="lock-tab" data-toggle="tab" href="#lock" role="tab" aria-controls="all" aria-selected="true">Locks</a>
+                            </li>
                         <li class="nav-item">
                             <a class="nav-link" id="vintage-tab" data-toggle="tab" href="#vintage" role="tab" aria-controls="vintage" aria-selected="false">Kitchen Accesories</a>
                         </li>
@@ -426,6 +429,110 @@
                 </div>
             </div>
           
+             <!-- Locks tab -->
+             <div class="tab-pane fade" id="lock" role="tabpanel" aria-labelledby="lock-tab">
+                    <div class="row d-block">
+                        <!-- prPostsSlider -->
+                        <div class="prPostsSlider prPostsSlider02 slickSlider">
+                                <div>
+                                        <div class="col-12">
+                                            <!-- prPostColumn -->
+                                            <article class="prPostColumn prPostColumn02 hasOver position-relative">
+                                                <!-- prColumnBgCover -->
+                                                <span class="bgCover prColumnBgCover d-block" style="background-image: url(images/home/cup_saucer_basket.jpg);">
+                                                    <img class="sr-only" src="images/home/cup_saucer_basket.jpg" alt="image description">
+                                                </span>
+                                                <!-- prPostCaption -->
+                                                <div class="prPostCaption bg-white rounded">
+                                                    <h3>
+                                                        <!-- hTitle -->
+                                                        <strong class="font-weight-normal hTitle d-block fontBase">Cup Saucer Basket</strong>
+                                                        <span class="d-block"><a href="/products">View Details.</a></span>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-12">
+                                            <!-- prPostColumn -->
+                                            <article class="prPostColumn prPostColumn02 hasOver position-relative">
+                                                <!-- prColumnBgCover -->
+                                                <span class="bgCover prColumnBgCover d-block" style="background-image: url(images/home/perforated_cutlury_basket.jpg);">
+                                                    <img class="sr-only" src="images/home/perforated_cutlury_basket.jpg" alt="image description">
+                                                </span>
+                                                <!-- prPostCaption -->
+                                                <div class="prPostCaption bg-white rounded">
+                                                    <h3>
+                                                        <!-- hTitle -->
+                                                        <strong class="font-weight-normal hTitle d-block fontBase">Perforated Cutlury Basket</strong>
+                                                        <span class="d-block"><a href="/products">View Details.</a></span>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-12">
+                                            <!-- prPostColumn -->
+                                            <article class="prPostColumn prPostColumn02 hasOver position-relative">
+                                                <!-- prColumnBgCover -->
+                                                <span class="bgCover prColumnBgCover d-block" style="background-image: url(images/home/other_drawer1.jpg);">
+                                                    <img class="sr-only" src="images/home/other_drawer1.jpg" alt="image description">
+                                                </span>
+                                                <!-- prPostCaption -->
+                                                <div class="prPostCaption bg-white rounded">
+                                                    <h3>
+                                                        <!-- hTitle -->
+                                                        <strong class="font-weight-normal hTitle d-block fontBase">Kitchen Drawer</strong>
+                                                        <span class="d-block"><a href="/products">View Details.</a></span>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-12">
+                                            <!-- prPostColumn -->
+                                            <article class="prPostColumn prPostColumn02 hasOver position-relative">
+                                                <!-- prColumnBgCover -->
+                                                <span class="bgCover prColumnBgCover d-block" style="background-image: url(images/home/other_drawer2.jpg);">
+                                                    <img class="sr-only" src="images/home/other_drawer2.jpg" alt="image description">
+                                                </span>
+                                                <!-- prPostCaption -->
+                                                <div class="prPostCaption bg-white rounded">
+                                                    <h3>
+                                                        <!-- hTitle -->
+                                                        <strong class="font-weight-normal hTitle d-block fontBase">Kitchen Drawer 2</strong>
+                                                        <span class="d-block"><a href="/products">View Details.</a></span>
+                                                    </h3>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                            <div class="col-12">
+                                                <!-- prPostColumn -->
+                                                <article class="prPostColumn prPostColumn02 hasOver position-relative">
+                                                    <!-- prColumnBgCover -->
+                                                    <span class="bgCover prColumnBgCover d-block" style="background-image: url(images/home/cup_saucer_basket.jpg);">
+                                                        <img class="sr-only" src="images/home/cup_saucer_basket.jpg" alt="image description">
+                                                    </span>
+                                                    <!-- prPostCaption -->
+                                                    <div class="prPostCaption bg-white rounded">
+                                                        <h3>
+                                                            <!-- hTitle -->
+                                                            <strong class="font-weight-normal hTitle d-block fontBase">Cup Saucer Basket</strong>
+                                                            <span class="d-block"><a href="/products">View Details.</a></span>
+                                                        </h3>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
     <!-- ltPostsBlock -->

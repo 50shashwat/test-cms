@@ -66,7 +66,7 @@
                     <!-- logo -->
                     <div class="logo">
                         <a href="home.html">
-                            <img src="images/logo.png" alt="Harrison Locks">
+                            <img src="{{ asset('images/logo.png') }}" alt="Harrison Locks">
                         </a>
                     </div>
                     <!-- ftAddress -->

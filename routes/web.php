@@ -28,6 +28,8 @@ Route::get('/display-and-design', 'StaticController@displaydisign')->name('carpe
 Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('/channel-partnership', 'StaticController@channelpartnership')->name('channel-partner');
 Route::get('/helpline-numbers', 'StaticController@helpline')->name('helpline');
+Route::get('/products/locks', 'ProductController@lock')->name('product-lock');
+Route::get('/products/kitchen-accessories', 'ProductController@kitchen_accessories')->name('product-kitchen-accessories');
 
 
 Route::prefix('admin')->group(function(){

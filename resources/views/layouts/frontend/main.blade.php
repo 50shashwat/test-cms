@@ -41,7 +41,7 @@
         @include('layouts.frontend.header')
         
         @yield('content')
-        
+		
         <!-- pageFooter -->
         @include('layouts.frontend.footer')
 			

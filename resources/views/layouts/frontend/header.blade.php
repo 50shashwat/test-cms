@@ -13,9 +13,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:info@harrisonlocks.com">
-                                <i class="fas fa-envelope icn"><span class="sr-only">icon</span></i>
-                                <span class="d-none d-lg-inline">info@harrisonlocks.com</span>
+                            <a href="/helpline-numbers">
+                                <i class="fas fa-address-book icn"><span class="sr-only">icon</span></i>
+                                <span class="d-none d-lg-inline">Helpline Numbers</span>
                             </a>
                         </li>
                     </ul>
@@ -71,7 +71,7 @@
                 <!-- logo -->
                 <div class="logo alignleft">
                     <a href="/">
-                        <img src="images/logo_white.png" alt="Harrison Locks">
+                        <img src="{{asset('images/logo_white.png') }}" alt="Harrison Locks">
                     </a>
                 </div>
                 <!-- pageNavHolder -->
@@ -91,9 +91,22 @@
                                 <li class="nav-item @if (\Request::is('/')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/"  aria-haspopup="true" >Home</a>
                                 </li>
-
-                                <li class="nav-item @if (\Request::is('products*')) active @endif">
-                                    <a class="nav-link fwMedium text-uppercase " href="/products"  aria-haspopup="true" >Products</a>
+                                <li class="nav-item dropdown @if (\Request::is('products*')) active @endif">
+                                    <a class="nav-link fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <!-- mainNavDropdown dropdown menu -->
+                                    <div class="dropdown-menu mainNavDropdown text-uppercase">
+                                        <!-- navDropdownList -->
+                                        <ul class="list-unstyled navDropdownList">
+                                            <li>
+                                                <a class="dropdown-item" href="/products/locks">Locks</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="/products/kitchen-accessories">Kitchen Accessories</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 
                                 <li class="nav-item @if (\Request::is('blog*')) active @endif">

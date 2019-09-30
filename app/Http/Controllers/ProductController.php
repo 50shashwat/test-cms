@@ -18,4 +18,12 @@ class ProductController extends Controller
     public function index(){
         return view('frontend.products.index');
     }
+
+    public function lock(){
+        return view('frontend.products.lock');
+    }
+    
+    public function kitchen_accessories(){
+        return view('frontend.products.kitchen_accessories');
+    }
 }
