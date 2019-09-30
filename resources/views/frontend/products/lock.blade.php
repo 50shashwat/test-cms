@@ -28,6 +28,9 @@
         </nav>
         <!-- contactAreaBlock -->
 
+        <div class="container">
+            <a href="/downloads/lock.pdf">Click Here</a> To Download the brochure
+        </div>
 
 </main>
 

@@ -27,7 +27,9 @@
             </div>
         </nav>
         <!-- contactAreaBlock -->
-
+        <div class="container">
+            <a href="/downloads/kitchen.pdf">Click Here</a> To Download the brochure
+        </div>
 
 </main>
 
