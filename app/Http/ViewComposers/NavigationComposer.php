@@ -16,7 +16,10 @@ class NavigationComposer
      */
     public function compose(View $view)
     {
-        $navigations = Menu::where('is_primary','true')->first()->menuItems()->toJson();
+        $navigations = Menu::where('is_primary','true')->first();
+        if($navigations!=null){
+            $navigations = $navigations->menuItems()->toJson();
+        }
         $view->with('navigations', json_decode($navigations, true) );
     }
 
