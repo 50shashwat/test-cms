@@ -47,6 +47,12 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <input id="extension" placeholder="91" required maxlength="3" type="number" class="form-control @error('extension') is-invalid @enderror" name="extension" value="{{ old('extension') }}"  autocomplete="extension">
+                                        
+                                        @error('extension')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="col-md-8">
                                         
