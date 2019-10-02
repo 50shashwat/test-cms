@@ -13,8 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                    Welcome/Congrats you are registered successfully with us. You can now view our products.
                 </div>
             </div>
         </div>
