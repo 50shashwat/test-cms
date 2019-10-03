@@ -28,10 +28,9 @@
         </nav>
         <!-- contactAreaBlock -->
 
-        <div class="container"  style="padding:40px">
-            <a href="/downloads/lock.pdf">Click Here</a> To Download the brochure
+        <div class="container">
+            <embed style="margin:auto" src="{{asset('/downloads/lock.pdf')}}" width="100%" height="2100px" />
         </div>
-
 </main>
 
 @endsection

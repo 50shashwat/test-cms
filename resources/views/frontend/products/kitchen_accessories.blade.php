@@ -27,8 +27,8 @@
             </div>
         </nav>
         <!-- contactAreaBlock -->
-        <div class="container" style="padding:40px">
-            <a href="/downloads/kitchen.pdf">Click Here</a> To Download the brochure
+        <div class="container">
+            <embed style="margin:auto" src="{{asset('/downloads/kitchen.pdf')}}" width="100%" height="2100px" />
         </div>
 
 </main>

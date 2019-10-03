@@ -3,7 +3,7 @@
     <div class="headerFixer">
         <div class="container relativeSm">
             
-            <div class="container relativeSm" style="background:#fff"
+            <div class="container relativeSm" style="background:#fff">
                         <!-- pageHeaderTopBar -->
                         <div class="pageHeaderTopBar">
                             <div class="row">
