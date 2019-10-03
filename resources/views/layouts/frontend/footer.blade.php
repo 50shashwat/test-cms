@@ -30,39 +30,8 @@
         <hr class="separator">
         <footer id="pageFooter" class="position-relative">
             <div class="row">
-                <div class="col col-12 col-md-9 col-lg-6 order-lg-2">
-                    <!-- ftLinksNav -->
-                    <nav class="ftLinksNav">
-                        <div class="row">
-                            <div class="col-12 col-sm-6">
-                                <h3 class="text-white">Information</h3>
-                                <ul class="list-unstyled">
-                                    <li><a href="javascript:void(0);">Term &amp; Condition</a></li>
-                                    <li><a href="javascript:void(0);">Privacy policy</a></li>
-                                    <li><a href="javascript:void(0);">Customer Service</a></li>
-                                    <li><a href="javascript:void(0);">FAQs</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <h3 class="text-white">Quick Link</h3>
-                                <ul class="list-unstyled">
-                                    <li><a href="/helpline-numbers">Helpline Numbers</a></li>
-                                    <li><a href="/products">Products</a></li>
-                                    <li><a href="/about-us">About Us</a></li>
-                                    <li><a href="/contact-us">Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
                 
-                <div class="col col-12 col-md-3 col-lg-2 order-lg-3 text-center text-md-left">
-                    <h3 class="text-white">Find Us</h3>
-                    <!-- ftSocialLinks -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14002.485472720467!2d77.1338362!3d28.6710537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e54092bb285b3e1!2sHarrison%20Locks!5e0!3m2!1sen!2sin!4v1569585853540!5m2!1sen!2sin" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-
-                <div class="col col-12 col-lg-4 order-lg-1 text-center text-lg-left position-static">
+                <div class="col-md-3 text-center text-lg-left position-static">
                     <!-- logo -->
                     <div class="logo">
                         <a href="home.html">
@@ -92,6 +61,39 @@
                         <p>Copyright &copy; 2019 <a href="/">Harrison Locks</a>.</p>
                     </div>
                 </div>
+                
+                <div class="col-md-6">
+                    <!-- ftLinksNav -->
+                    <nav class="ftLinksNav">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <h3 class="text-white">Information</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="javascript:void(0);">Term &amp; Condition</a></li>
+                                    <li><a href="javascript:void(0);">Privacy policy</a></li>
+                                    <li><a href="javascript:void(0);">Customer Service</a></li>
+                                    <li><a href="javascript:void(0);">FAQs</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <h3 class="text-white">Quick Link</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="/helpline-numbers">Helpline Numbers</a></li>
+                                    <li><a href="/products">Products</a></li>
+                                    <li><a href="/about-us">About Us</a></li>
+                                    <li><a href="/contact-us">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                
+                <div class="col-md-3 text-center text-md-left">
+                    <h3 class="text-white">Find Us</h3>
+                    <!-- ftSocialLinks -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14002.485472720467!2d77.1338362!3d28.6710537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e54092bb285b3e1!2sHarrison%20Locks!5e0!3m2!1sen!2sin!4v1569585853540!5m2!1sen!2sin" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+
             </div>
         </footer>
     </div>
