@@ -41,7 +41,7 @@
 
                         
                         <div class="form-group row">
-                            <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
+                            <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Mobile Number') }}</label>
 
                             <div class="col-md-6">
                                 <div class="row">
@@ -123,4 +123,38 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('script')
+
+<script>
+$('#extension').on('keydown keyup', function(e){
+    if ($(this).val().length >= 3 
+        && e.keyCode !== 46 // keycode for delete
+        && e.keyCode !== 8 // keycode for backspace
+       ) {
+       e.preventDefault();
+       
+    }
+});
+
+
+$('#phone').on('keydown keyup', function(e){
+    if ($(this).val().length >= 10 
+        && e.keyCode !== 46 // keycode for delete
+        && e.keyCode !== 8 // keycode for backspace
+       ) {
+       e.preventDefault();
+       
+    }
+});
+
+$(document).ready(function(){
+   $("#phone").numeric();
+   $("#extension").numeric();
+});
+
+
+</script>
+
 @endsection
