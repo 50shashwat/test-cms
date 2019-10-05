@@ -45,6 +45,10 @@
 		opacity: 0.4;
 	}
 
+	.ftAddress{
+		margin-top:40px;
+	}
+
 	@media only screen and (max-width: 600px) {
 		
 		.dharmendra{
