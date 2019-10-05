@@ -52,8 +52,8 @@
 	@media only screen and (max-width: 600px) {
 		
 		.dharmendra{
-			width: 180px;
-			height: 100px;		
+			width: 120px;
+			height: auto;		
 		}
 	}
 
@@ -71,7 +71,7 @@
         <!-- pageFooter -->
         @include('layouts.frontend.footer')
 		<div class="dharmendra">
-			<img src="{{asset('images/dharmendre_harrison.png') }}" alt="Dharmendra Brand Ambasador Harrison Lock" />	
+			<img src="{{asset('images/dharmendra_2.png') }}" alt="Dharmendra Brand Ambasador Harrison Lock" />	
 		</div>	
 		
 	</div>
