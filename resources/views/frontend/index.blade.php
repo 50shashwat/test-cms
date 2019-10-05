@@ -27,8 +27,8 @@
                 </div>
             </div>
             <!-- bannerBlockSlideBg -->
-            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/img01.jpg);">
-                <img class="sr-only" src="images/img01.jpg" alt="image description">
+            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/banner_1.jpg);">
+                <img class="sr-only" src="images/banner_1.jpg" alt="image description">
             </span>
         </div>
         <!-- bannerSliderSlide -->
@@ -50,8 +50,8 @@
                 </div>
             </div>
             <!-- bannerBlockSlideBg -->
-            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/img02.jpg);">
-                <img class="sr-only" src="images/img02.jpg" alt="image description">
+            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/banner_2.jpg);">
+                <img class="sr-only" src="images/banner_2.jpg" alt="image description">
             </span>
         </div>
         <!-- bannerSliderSlide -->
@@ -76,8 +76,8 @@
                 </div>
             </div>
             <!-- bannerBlockSlideBg -->
-            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/img03.jpg);">
-                <img class="sr-only" src="images/img03.jpg" alt="image description">
+            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/banner_3.jpg);">
+                <img class="sr-only" src="images/banner_3.jpg" alt="image description">
             </span>
         </div>
 

@@ -33,6 +33,28 @@
 	<link rel="stylesheet" href="{{ asset('css/colors.css') }}">
 	<!-- include the site responsive stylesheet -->
 	<link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+	<style>
+	.dharmendra{
+		position: fixed;
+		bottom:-10px;
+		right:40px;
+		z-index: 5000;
+
+	}
+	.dharmendra:hover{
+		opacity: 0.4;
+	}
+
+	@media only screen and (max-width: 600px) {
+		
+		.dharmendra{
+			width: 180px;
+			height: 100px;		
+		}
+	}
+
+	</style>
+
 </head>
 <body>
 	<!-- pageWrapper -->
@@ -44,7 +66,9 @@
 		
         <!-- pageFooter -->
         @include('layouts.frontend.footer')
-			
+		<div class="dharmendra">
+			<img src="{{asset('images/dharmendre_harrison.png') }}" alt="Dharmendra Brand Ambasador Harrison Lock" />	
+		</div>	
 		
 	</div>
 	<!-- include jQuery library -->
