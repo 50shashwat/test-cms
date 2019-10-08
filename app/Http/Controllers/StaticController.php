@@ -52,7 +52,7 @@ class StaticController extends Controller
         $objDemo->type = $request->type;
         $objDemo->message = $request->message;
 
-        Mail::to('shashwat@kalpvaig.com')->send(new ContactPost($objDemo));
+        Mail::to('info@harrisonlocks.com')->send(new ContactPost($objDemo));
 
         return back()->with('success', 'Message Sent Successfully');
         
