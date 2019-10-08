@@ -31,6 +31,7 @@ Route::get('/helpline-numbers', 'StaticController@helpline')->name('helpline');
 Route::get('/products/locks', 'ProductController@lock')->name('product-lock');
 Route::get('/products/kitchen-accessories', 'ProductController@kitchen_accessories')->name('product-kitchen-accessories');
 
+Route::post('/contact','StaticController@sendContact');
 
 Route::prefix('admin')->group(function(){
     Route::get('/login', 'Admin\LoginController@showLoginForm')->name('admin.login');

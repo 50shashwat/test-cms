@@ -59,18 +59,31 @@
                             <div class="col-12 col-md-6 offset-xl-1 col-xl-6">
                                     <!-- widgetCtForm -->
                                     <aside class="widget widgetCtForm hasShadow bg-white mb-4">
-                                        <form action="javascript:void(0);">
+
+                                        @if (session('success'))
+                                            <div class="alert alert-success">
+                                                {{ session('success') }}
+                                            </div>
+                                        @endif
+
+                                        <form action="/contact" method="post">
+                                            @csrf
+                                            <input type="hidden" name="type" value="contact" />
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <input type="text" class="form-control w-100 d-block" placeholder="Name *">
+                                                <input type="text" name="name" class="form-control w-100 d-block" placeholder="Name *">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <input type="tel" class="form-control w-100 d-block" placeholder="Phone">
+                                                <input type="tel" name="phone" class="form-control w-100 d-block" placeholder="Contact Number">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <textarea class="form-control d-block w-100" placeholder="Message*"></textarea>
+                                                <input type="email" name="email" class="form-control w-100 d-block" placeholder="Email">
+                                            </div>
+                                            <!-- form group -->
+                                            <div class="form-group">
+                                                <textarea name="message" class="form-control d-block w-100" placeholder="Message*"></textarea>
                                             </div>
                                             <!-- button -->
                                             <button class="btn btnTheme d-block w-100 text-uppercase" type="submit" data-hover="Get A Quote">

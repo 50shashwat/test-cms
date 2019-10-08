@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactPost;
+use Illuminate\Support\Facades\Mail;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class StaticController extends Controller
 {
@@ -32,5 +36,25 @@ class StaticController extends Controller
 
     public function helpline(){
         return view('frontend.static.helpline');
+    }
+
+    public function sendContact(Request $request){
+        $name = $request->name;
+        $email = $request->email;
+        $phone = $request->phone;
+        $type = $request->type;
+        $message = $request->message;
+
+        $objDemo = new \stdClass();
+        $objDemo->name = $request->name;
+        $objDemo->email = $request->email;
+        $objDemo->phone = $request->phone;
+        $objDemo->type = $request->type;
+        $objDemo->message = $request->message;
+
+        Mail::to('shashwat@kalpvaig.com')->send(new ContactPost($objDemo));
+
+        return back()->with('success', 'Message Sent Successfully');
+        
     }
 }
