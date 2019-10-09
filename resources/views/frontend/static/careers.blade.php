@@ -44,7 +44,7 @@
                                                 {{ session('success') }}
                                             </div>
                                         @endif
-                                        <form action="/contact" method="post">
+                                        <form action="/contact" method="post"  enctype="multipart/form-data">
                                             @csrf
                                             <input type="hidden" name="type" value="careers" />
                                             <!-- form group -->
@@ -58,6 +58,12 @@
                                             <!-- form group -->
                                             <div class="form-group">
                                                 <input type="email" name="email" class="form-control w-100 d-block" placeholder="Email">
+                                            </div>
+                                            <!-- form group -->
+
+                                            <div class="form-group">
+                                                <label for="resume">Upload Resume (&lt; 2MB)</label>
+                                                <input type="file" name="resume" class="form-control w-100 d-block" placeholder="Resume">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">

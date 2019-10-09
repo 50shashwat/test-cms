@@ -21,6 +21,7 @@ class CreateMediaTable extends Migration
             $table->nullableMorphs('mediable');
             $table->timestamps();
         });
+
     }
 
     /**

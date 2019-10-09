@@ -16,7 +16,12 @@ class CreateNewsletterSubscriptionTable extends Migration
         Schema::create('newsletter_subscriptions', function (Blueprint $table) {
             
             $table->bigIncrements('id');
+            $table->string('name')->nullable();
             $table->string('email')->unique();
+            $table->string('phone')->nullable();
+            $table->string('resume')->nullable();
+            $table->text('message')->nullable();
+            $table->string('type')->nullable();
             $table->timestamps();
 
         });
