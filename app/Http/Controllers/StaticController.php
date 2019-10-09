@@ -60,7 +60,7 @@ class StaticController extends Controller
 
         NewsletterSubscription::create(array_merge($request->all(), ['resume' => $fileUrl]));
 
-        Mail::to('shashwat@kalpvaig.com')->send(new ContactPost($objDemo));
+        Mail::to('info@harrisonlocks.com')->send(new ContactPost($objDemo));
 
         return back()->with('success', 'Message Sent Successfully');
         
