@@ -28,7 +28,7 @@
         </nav>
         <!-- contactAreaBlock -->
         <div class="container">
-            <embed style="margin:auto" src="{{asset('/downloads/kitchen.pdf')}}" width="100%" height="2100px" />
+            <embed style="margin:auto" src="{{asset('/downloads/kitchen.pdf')}}#toolbar=0" width="100%" height="2100px" />
         </div>
 
 </main>

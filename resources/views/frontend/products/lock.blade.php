@@ -29,8 +29,16 @@
         <!-- contactAreaBlock -->
 
         <div class="container">
-            <embed style="margin:auto" src="{{asset('/downloads/lock.pdf')}}" width="100%" height="2100px" />
+            <embed style="margin:auto" src="{{asset('/downloads/lock.pdf')}}#toolbar=0" width="100%" height="2100px" />
         </div>
 </main>
 
+@endsection
+
+@section('script')
+<style>
+#toolbarViewer{
+    display: none;
+}
+</style>    
 @endsection
