@@ -27,9 +27,10 @@
             </div>
         </nav>
         <!-- contactAreaBlock -->
-        <div class="container">
-            <embed style="margin:auto" src="{{asset('/downloads/kitchen.pdf')}}#toolbar=0" width="100%" height="2100px" />
-        </div>
+        
+        <div class="container" style="margin-bottom:60px;margin-top:60px;padding:50px">
+            <iframe src="{{asset('turn-kitchen/index.html')}}" style="width:100%; height:800px;border:0px;padding:0px" ></iframe>
+         </div>
 
 </main>
 

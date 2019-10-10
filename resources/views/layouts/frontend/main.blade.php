@@ -37,8 +37,9 @@
 	.dharmendra{
 		position: fixed;
 		bottom:-10px;
-		right:40px;
+		right:20px;
 		z-index: 5000;
+		width: 160px;
 
 	}
 	.dharmendra:hover{
