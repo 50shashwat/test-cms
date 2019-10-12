@@ -58,6 +58,9 @@
 		}
 	}
 
+	.pageMainNavigation.navbar-nav.pageMainNavigation02 .nav-link{
+		font-size:11px;
+	}
 	</style>
 
 </head>

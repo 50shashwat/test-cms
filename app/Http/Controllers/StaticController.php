@@ -65,4 +65,8 @@ class StaticController extends Controller
         return back()->with('success', 'Message Sent Successfully');
         
     }
+
+    public function achievements(){
+        return view('frontend.static.achievements');
+    }
 }

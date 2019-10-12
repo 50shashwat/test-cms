@@ -12,18 +12,11 @@
                 <div class="align">
                     <!-- bannerSlideHeader -->
                     <header class="bannerSlideHeader">
-                        <h1 class="text-uppercase fwSemiBold fontBase">Harrison Locks</h1>
-                        <p>We build trust with our products</p>
+                        <h1 class="text-uppercase fwSemiBold fontBase">DOOR HANDLES</h1>
+                        <p>Harrison Locks &amp; Hardware Solutions</p>
                     </header>
                     <!-- btnHolder -->
-                    <footer class="btnHolder d-flex flex-wrap justify-content-center">
-                        <a href="javascript:void(0);" class="btn btnThemeOutine text-uppercase" data-hover="Learn More">
-                            <span class="d-block btnText">Learn More</span>
-                        </a>
-                        <a href="/contact-us" class="btn btnTheme text-uppercase" data-hover="Contact Us">
-                            <span class="d-block btnText">Contact Us</span>
-                        </a>
-                    </footer>
+                  
                 </div>
             </div>
             <!-- bannerBlockSlideBg -->
@@ -38,15 +31,10 @@
                 <div class="align">
                     <!-- bannerSlideHeader -->
                     <header class="bannerSlideHeader">
-                        <h1 class="text-uppercase fwSemiBold fontBase">Launching RM 600 Door Closer</h1>
-                        <p>Suitable for wooden and aluminium doors.</p>
+                        <h1 class="text-uppercase fwSemiBold fontBase">VELV'E' DRAWER TANTEM 'E' BOXES</h1>
+                        <p>Having the best sliding mechanism</p>
                     </header>
-                    <!-- btnHolder -->
-                    <footer class="btnHolder d-flex flex-wrap justify-content-center">
-                        <a href="javascript:void(0);" class="btn btnThemeOutine text-uppercase" data-hover="Learn More">
-                            <span class="d-block btnText">Learn More</span>
-                        </a>
-                    </footer>
+                    
                 </div>
             </div>
             <!-- bannerBlockSlideBg -->
@@ -61,18 +49,11 @@
                 <div class="align">
                     <!-- bannerSlideHeader -->
                     <header class="bannerSlideHeader">
-                        <h1 class="text-uppercase fwSemiBold fontBase">Door Handle Set</h1>
-                        <p>Choose from a wide variety of door handle sets</p>
+                        <h1 class="text-uppercase fwSemiBold fontBase">CABINET HINGES</h1>
+                        <p>Furniture Hardware</p>
                     </header>
                     <!-- btnHolder -->
-                    <footer class="btnHolder d-flex flex-wrap justify-content-center">
-                        <a href="javascript:void(0);" class="btn btnThemeOutine text-uppercase" data-hover="Learn More">
-                            <span class="d-block btnText">Learn More</span>
-                        </a>
-                        <a href="contact2.html" class="btn btnTheme text-uppercase" data-hover="Contact Us">
-                            <span class="d-block btnText">Contact Us</span>
-                        </a>
-                    </footer>
+                    
                 </div>
             </div>
             <!-- bannerBlockSlideBg -->
@@ -88,18 +69,9 @@
                 <div class="align">
                     <!-- bannerSlideHeader -->
                     <header class="bannerSlideHeader">
-                        <h1 class="text-uppercase fwSemiBold fontBase"> Kitchen Accessories</h1>
-                        <p>A wide range of kitchen accessories can be purchased from our stores</p>
+                        <h1 class="text-uppercase fwSemiBold fontBase">The Kitchen</h1>
+                        <p>For Added Comfort, Convenience & Ease that a Modern Kitchen Looks for.</p>
                     </header>
-                    <!-- btnHolder -->
-                    <footer class="btnHolder d-flex flex-wrap justify-content-center">
-                        <a href="javascript:void(0);" class="btn btnThemeOutine text-uppercase" data-hover="Learn More">
-                            <span class="d-block btnText">Learn More</span>
-                        </a>
-                        <a href="contact2.html" class="btn btnTheme text-uppercase" data-hover="Contact Us">
-                            <span class="d-block btnText">Contact Us</span>
-                        </a>
-                    </footer>
                 </div>
             </div>
             <!-- bannerBlockSlideBg -->
@@ -176,7 +148,7 @@
                         <p>Do call us here</p>
                     </div>
                     <div class="col-12 col-md-4 text-md-right">
-                        <a href="tel:18001035795" class="btn btnTheme btnThemeWhiteInverse fontRoboto btnRoudedLarge" data-hover="1-800-103-5795">
+                        <a href="#" class="btn btnTheme btnThemeWhiteInverse fontRoboto btnRoudedLarge" data-hover="1-800-103-5795">
                             <span class="btnText d-block">
                                 <i class="ei_icon_phone btnIcn"><span class="sr-only">icon</span></i>
                                 <span>1-800-103-5795</span>

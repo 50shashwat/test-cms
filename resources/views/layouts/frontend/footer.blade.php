@@ -48,7 +48,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-phone fa-flip-horizontal flex-shrink-0 icn"><span class="sr-only">icon</span></i>
-                                <strong class="font-weight-normal text d-block"><a href="tel:+911145761101">+91 114 576 1101</a></strong>
+                                <strong class="font-weight-normal text d-block"><a href="#">+91 114 576 1101</a></strong>
                             </li>
                             <li>
                                 <i class="fas fa-envelope flex-shrink-0 icn"><span class="sr-only">icon</span></i>

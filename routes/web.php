@@ -32,9 +32,11 @@ Route::get('/products/locks', 'ProductController@lock')->name('product-lock');
 Route::get('/products/kitchen-accessories', 'ProductController@kitchen_accessories')->name('product-kitchen-accessories');
 
 Route::post('/contact','StaticController@sendContact');
+Route::get('/achievement', 'StaticController@achievements')->name('achievements');
 
 Route::prefix('admin')->group(function(){
     Route::get('/login', 'Admin\LoginController@showLoginForm')->name('admin.login');
     Route::post('/login','Admin\LoginController@login')->name('admin.login.submit');
     Route::get('/','Admin\AdminController@index')->name('admin.dashboard');
 });
+
