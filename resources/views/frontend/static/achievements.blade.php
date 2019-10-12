@@ -16,7 +16,7 @@
                                 Home
                             </a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">{{Route::currentRouteName()}}</li>
+                        <li class="breadcrumb-item active" aria-current="page">Milestone &amp; Achievements </li>
                     </ol>
                 </div>
                 <div class="col-12 col-md-5 d-none d-md-flex align-items-md-center justify-content-md-end">
