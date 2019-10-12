@@ -38,7 +38,7 @@
         </div>
         
         <div class="col-md-6" style="text-align:center">
-        <video width="320" height="240" controls>
+        <video width="320" height="240" controls style="width:100%;height:auto">
             <source src="/downloads/palwal.mp4" type="video/mp4">
             Your browser does not support the video playback.
         </video>  
