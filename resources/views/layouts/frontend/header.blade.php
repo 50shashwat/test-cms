@@ -116,8 +116,8 @@
                                 </li>
                                 
                                 
-                                <li class="nav-item @if (\Request::is('achievements*')) active @endif">
-                                    <a class="nav-link fwMedium text-uppercase " href="/achievements"  aria-haspopup="true" >Achievements</a>
+                                <li class="nav-item @if (\Request::is('achievement*')) active @endif">
+                                    <a class="nav-link fwMedium text-uppercase " href="/achievement"  aria-haspopup="true" >Achievements</a>
                                 </li>
                                
 
