@@ -70,7 +70,7 @@
                                                 <textarea name="message" class="form-control d-block w-100" placeholder="Message*"></textarea>
                                             </div>
                                             <!-- button -->
-                                            <button class="btn btnTheme d-block w-100 text-uppercase" type="submit" data-hover="Get A Quote">
+                                            <button class="btn btnTheme d-block w-100 text-uppercase" type="submit" data-hover="Submit Query">
                                                 <span class="d-block btnText">Submit Query</span>
                                             </button>
                                         </form>
@@ -81,6 +81,11 @@
                             
                                 <div class="col-12 col-md-5">
                                         <!-- ctAddress -->
+                                        @if (session('success'))
+                                            <div class="alert alert-success">
+                                                <a href="{{asset('downloads/interview_application.pdf')}}" target="_blank"  style="padding:10px">Download the form </a> , fill the form and submit it to  resume@harrisonlocks.com .
+                                            </div>
+                                        @endif
                                     </div>
                                 </div>
                         

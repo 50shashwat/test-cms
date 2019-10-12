@@ -48,7 +48,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-phone fa-flip-horizontal flex-shrink-0 icn"><span class="sr-only">icon</span></i>
-                                <strong class="font-weight-normal text d-block"><a href="#">+91 114 576 1101</a></strong>
+                                <strong class="font-weight-normal text d-block"><a href="#">+91 114 576 1101, 02, 03 ... 20</a></strong>
                             </li>
                             <li>
                                 <i class="fas fa-envelope flex-shrink-0 icn"><span class="sr-only">icon</span></i>
@@ -69,10 +69,9 @@
                             <div class="col-md-6 col-sm-12">
                                 <h3 class="text-white">Information</h3>
                                 <ul class="list-unstyled">
-                                    <li><a href="javascript:void(0);">Term &amp; Condition</a></li>
-                                    <li><a href="javascript:void(0);">Privacy policy</a></li>
-                                    <li><a href="javascript:void(0);">Customer Service</a></li>
-                                    <li><a href="javascript:void(0);">FAQs</a></li>
+                                    <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+                                    <li><a href="/privacy-policy">Privacy policy</a></li>
+                                    <li><a href="/disclaimer">Disclaimer</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-6 col-sm-12">

@@ -79,6 +79,24 @@
                 <img class="sr-only" src="images/img04.jpg" alt="image description">
             </span>
         </div>
+
+        <!-- bannerSliderSlide -->
+        <div class="bannerSliderSlide">
+            <!-- bannerSlideHolder -->
+            <div class="container bannerSlideHolder bannerSlideHolder02 position-relative">
+                <div class="align">
+                    <!-- bannerSlideHeader -->
+                    <header class="bannerSlideHeader">
+                        <h1 class="text-uppercase fwSemiBold fontBase">DOOR CLOSER</h1>
+                        <p></p>
+                    </header>
+                </div>
+            </div>
+            <!-- bannerBlockSlideBg -->
+            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/banners/img05.jpg);">
+                <img class="sr-only" src="images/banners/img05.jpg" alt="RM600 Door Closer">
+            </span>
+        </div>
     </section>
     
     <!-- wcuBlock -->
@@ -293,6 +311,8 @@
                                     </article>
                                 </div>
                             </div>
+
+                            
                     </div>
                 </div>
             </div>

@@ -60,7 +60,11 @@ class StaticController extends Controller
 
         NewsletterSubscription::create(array_merge($request->all(), ['resume' => $fileUrl]));
 
-        Mail::to('info@harrisonlocks.com')->send(new ContactPost($objDemo));
+        if($request->type=="careers"){
+            Mail::to('resume@harrisonlocks.com')->send(new ContactPost($objDemo));
+        }
+        else
+            Mail::to('exports@harrisonlocks.com')->send(new ContactPost($objDemo));
 
         return back()->with('success', 'Message Sent Successfully');
         
@@ -68,5 +72,19 @@ class StaticController extends Controller
 
     public function achievements(){
         return view('frontend.static.achievements');
+    }
+
+    public function terms(){
+        return view('frontend.static.terms');
+    }
+
+    
+    public function privacy(){
+        return view('frontend.static.privacy');
+    }
+
+    
+    public function disclaimer(){
+        return view('frontend.static.disclaimer');
     }
 }
