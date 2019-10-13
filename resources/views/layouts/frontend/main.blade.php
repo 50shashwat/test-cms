@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="{{ asset('css/fontsicon.css') }}">
 	<!-- include the site Plugins stylesheet -->
 	<link rel="stylesheet" href="{{ asset('css/plugins.css') }}">
+
 	<!-- include the site stylesheet -->
 	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 	<!-- include theme color setting stylesheet -->
@@ -63,6 +64,9 @@
 	}
 	</style>
 
+	<!-- include jQuery library -->
+	<script src="{{asset('js/jquery-3.3.1.min.js') }} "></script>
+	<script src="{{asset('bootstrap.min.js') }} "></script>
 </head>
 <body>
 	<!-- pageWrapper -->
@@ -79,8 +83,6 @@
 		</div>	
 		
 	</div>
-	<!-- include jQuery library -->
-	<script src="{{asset('js/jquery-3.3.1.min.js') }} "></script>
 	<!-- include Plugins JavaScript -->
 	<script src="{{asset('js/plugins.js') }}"></script>
 	<!-- include custom JavaScript -->

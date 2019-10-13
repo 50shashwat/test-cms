@@ -42,6 +42,9 @@ class StaticController extends Controller
     public function sendContact(Request $request){
         
         $objDemo = new \stdClass();
+        $request->validate([
+            'email' => ['required', 'string', 'email', 'max:191']
+        ]);
 
         $fileUrl = "";
         if($request->has('resume')){
@@ -52,16 +55,19 @@ class StaticController extends Controller
             $objDemo->resume = $destinationPath.$fileUrl;
         }
 
-        $objDemo->name = $request->name;
-        $objDemo->email = $request->email;
-        $objDemo->phone = $request->phone;
-        $objDemo->type = $request->type;
-        $objDemo->message = $request->message;
+        $objDemo->name = $request->has('name') ? $request->name: "";
+        $objDemo->email =  $request->has('email') ?$request->email:"";
+        $objDemo->phone = $request->has('phone') ? $request->phone:"";
+        $objDemo->type =  $request->has('type') ?$request->type:"";
+        $objDemo->message = $request->has('message') ? $request->message:"";
 
         NewsletterSubscription::create(array_merge($request->all(), ['resume' => $fileUrl]));
 
         if($request->type=="careers"){
             Mail::to('resume@harrisonlocks.com')->send(new ContactPost($objDemo));
+        }
+        if($request->type=="newsletter"){
+            //do nothing
         }
         else
             Mail::to('exports@harrisonlocks.com')->send(new ContactPost($objDemo));

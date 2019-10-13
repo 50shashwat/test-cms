@@ -5,22 +5,26 @@
     <div class="container position-relative pageFooterWrapHolder">
         <!-- subscribeAsideBlock -->
         <aside class="subscribeAsideBlock">
-            <form action="javascript:void(0);">
+            <form action="/contact" method="post">
                 <div class="row">
                     <div class="col-12 col-md-7">
                         <h3 class="text-white text-uppercase">Sign up for our newsletter:</h3>
                         <p>Join over 5,000 people who get free</p>
                     </div>
                     <div class="col-12 col-md-5">
+                        
                         <!-- input group -->
                         <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                            <div class="input-group-append">
-                                <!-- button -->
-                                <button class="btn btnTheme text-uppercase" type="submit" data-hover="Send">
-                                    <span class="d-block btnText">Subscribe</span>
-                                </button>
-                            </div>
+                                @csrf
+                                <input type="hidden" name="type" value="newsletter" />
+                                <input name="email" type="email" class="form-control" placeholder="Your Email">
+                                <div class="input-group-append">
+                                    <!-- button -->
+                                    <button class="btn btnTheme text-uppercase" type="submit" data-hover="Send">
+                                        <span class="d-block btnText">Subscribe</span>
+                                    </button>
+                                </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -108,3 +112,33 @@
         <div class="dot"></div>
     </div>
 </div>
+
+
+
+<div id="myModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Newsletter Subscription Confirmed</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Thankyou for subscribing with us</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btnTheme text-uppercase" type="button" data-hover="Close"  data-dismiss="modal">
+                <span class="d-block btnText">Close</span>
+            </button>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+@if (session('success'))
+<script >
+    $('#myModal').modal('show');
+</script>
+@endif

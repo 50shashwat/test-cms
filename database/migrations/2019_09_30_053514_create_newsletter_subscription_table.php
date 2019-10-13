@@ -17,7 +17,7 @@ class CreateNewsletterSubscriptionTable extends Migration
             
             $table->bigIncrements('id');
             $table->string('name')->nullable();
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('phone')->nullable();
             $table->string('resume')->nullable();
             $table->text('message')->nullable();
