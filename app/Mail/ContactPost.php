@@ -32,7 +32,10 @@ class ContactPost extends Mailable
     {
         if($this->obj->type=='careers')
         {
-            return $this->view('emails.contact')->subject($this->obj->type.' On Website')->attach($this->obj->resume);
+            if(isset($this->obj->resume))
+                return $this->view('emails.contact')->subject($this->obj->type.' On Website')->attach($this->obj->resume);
+            else
+                return $this->view('emails.contact')->subject($this->obj->type.' On Website');
         }
 
         return $this->view('emails.contact')->subject($this->obj->type.' On Website');

@@ -29,7 +29,9 @@ class AdminController extends Controller
         return view('backend.index');
     }
 
-    public function user(){
+    
+    public function user()
+    {
         $admins = Admin::all()->paginate(10);
         return view('backend.users.index', compact('admins'));
     }

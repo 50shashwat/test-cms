@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+    
 <h2>{{ucfirst($type) }}</h2>
     <table class="table table-striped table-bordered">
         <tr>

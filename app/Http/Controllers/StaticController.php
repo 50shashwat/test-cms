@@ -47,7 +47,7 @@ class StaticController extends Controller
         ]);
 
         $fileUrl = "";
-        if($request->has('resume')){
+        if($request->has('resume') &&  $request->file('resume')){
             $file = $request->file('resume');
             $destinationPath = public_path().'/resume/';
             $fileUrl = time()."_".trim(preg_replace('/\s+/', '', $file->getClientOriginalName()));

@@ -40,9 +40,9 @@ Route::post('/contact','StaticController@sendContact');
 Route::get('/achievement', 'StaticController@achievements')->name('achievements');
 
 Route::prefix('admin')->group(function(){
+    Route::get('/dashboard','Admin\AdminController@index')->name('admin.dashboard');
     Route::get('/login', 'Admin\LoginController@showLoginForm')->name('admin.login');
     Route::post('/login','Admin\LoginController@login')->name('admin.login.submit');
-    Route::get('/','Admin\AdminController@index')->name('admin.dashboard');
     Route::get('/users','Admin\AdminController@user')->name('admin.users');
     Route::get('/pages/{type}','Admin\PageController@getPage')->name('admin.pages');
     Route::post('/pages/{type}','Admin\PageController@storePage')->name('admin.pages');
