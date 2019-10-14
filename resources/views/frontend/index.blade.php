@@ -600,5 +600,37 @@
         </div>
     </section>
 </main>
+
+
+
+<div id="myModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Newsletter Subscription Confirmed</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Thankyou for subscribing with us</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btnTheme text-uppercase" type="button" data-hover="Close"  data-dismiss="modal">
+                    <span class="d-block btnText">Close</span>
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    @if (session('success'))
+    <script >
+        $('#myModal').modal('show');
+    </script>
+    @endif
+
+    
 @endsection
 

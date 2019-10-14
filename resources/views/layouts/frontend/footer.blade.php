@@ -52,7 +52,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-phone fa-flip-horizontal flex-shrink-0 icn"><span class="sr-only">icon</span></i>
-                                <strong class="font-weight-normal text d-block"><a href="#">+91 114 576 1101, 02, 03 ... 20</a></strong>
+                                <strong class="font-weight-normal text d-block"><a href="#">+91 114 576 1101, 02, 03 upto 11</a></strong>
                             </li>
                             <li>
                                 <i class="fas fa-envelope flex-shrink-0 icn"><span class="sr-only">icon</span></i>
@@ -113,32 +113,3 @@
     </div>
 </div>
 
-
-
-<div id="myModal" class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title">Newsletter Subscription Confirmed</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <p>Thankyou for subscribing with us</p>
-        </div>
-        <div class="modal-footer">
-            <button class="btn btnTheme text-uppercase" type="button" data-hover="Close"  data-dismiss="modal">
-                <span class="d-block btnText">Close</span>
-            </button>
-        </div>
-        </div>
-    </div>
-</div>
-
-
-@if (session('success'))
-<script >
-    $('#myModal').modal('show');
-</script>
-@endif
