@@ -49,25 +49,25 @@
                                             <input type="hidden" name="type" value="careers" />
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <input type="text" name="name" class="form-control w-100 d-block" placeholder="Name *">
+                                                <input type="text" name="name" class="form-control w-100 d-block" required placeholder="Name *">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <input type="tel" name="phone" class="form-control w-100 d-block" placeholder="Phone">
+                                                <input type="tel" name="phone" class="form-control w-100 d-block" required placeholder="Phone">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <input type="email" name="email" class="form-control w-100 d-block" placeholder="Email">
+                                                <input type="email" name="email" class="form-control w-100 d-block" required placeholder="Email">
                                             </div>
                                             <!-- form group -->
 
                                             <div class="form-group">
                                                 <label for="resume">Upload Resume (&lt; 2MB)</label>
-                                                <input type="file" name="resume" class="form-control w-100 d-block" placeholder="Resume">
+                                                <input type="file" name="resume" class="form-control w-100 d-block" required placeholder="Resume">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <textarea name="message" class="form-control d-block w-100" placeholder="Message*"></textarea>
+                                                <textarea name="message" class="form-control d-block w-100" required placeholder="Message*"></textarea>
                                             </div>
                                             <!-- button -->
                                             <button class="btn btnTheme d-block w-100 text-uppercase" type="submit" data-hover="Submit Query">
