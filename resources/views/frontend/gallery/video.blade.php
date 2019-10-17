@@ -28,16 +28,7 @@
 </nav>
 <!-- contactAreaBlock -->
 <div class="container">
-    <div class="row" style="margin: 70px auto">
-        <div class="col-md-6" style="text-align:center">
-            
-            <video width="320" height="240" controls>
-                <source src="/downloads/video_1.mp4" type="video/mp4">
-                Your browser does not support the video playback.
-            </video>     
-        </div>
-    
-    </div>
+        {!! $content !!}
 </div>
 
 </main>

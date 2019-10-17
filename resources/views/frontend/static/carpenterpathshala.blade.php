@@ -29,21 +29,8 @@
 <!-- contactAreaBlock -->
 <div class="container">
     <div class="row" style="margin: 70px auto">
-        <div class="col-md-6" style="text-align:center">
+            {!! $content !!}
             
-            <video width="320" height="240" controls style="width:100%;height:auto">
-                <source src="/downloads/faridabad.mp4" type="video/mp4">
-                Your browser does not support the video playback.
-            </video>     
-        </div>
-        
-        <div class="col-md-6" style="text-align:center">
-        <video width="320" height="240" controls style="width:100%;height:auto">
-            <source src="/downloads/palwal.mp4" type="video/mp4">
-            Your browser does not support the video playback.
-        </video>  
-            
-        </div>
     </div>
 </div>
 

@@ -39,20 +39,7 @@
                                 <!-- ctAddress -->
                                 <address class="ctAddress text-dark">
                                     <h4>Head Office</h4>
-                                    <ul class="list-unstyled">
-                                        <li class="d-flex align-items-center">
-                                            <i class="ei_icon_pin_alt icn text-center flex-shrink-0"><span class="sr-only">icon</span></i>
-                                            <strong class="text font-weight-normal">14, Central Market, West Punjabi Bagh, Punjabi Bagh, New Delhi, Delhi 110026</strong>
-                                        </li>
-                                        <li class="d-flex align-items-center">
-                                            <i class="ei_icon_mail_alt text-center icn flex-shrink-0"><span class="sr-only">icon</span></i>
-                                            <strong class="text font-weight-normal"><a href="mailto:info@harrisonlocks.com">info@harrisonlocks.com</a></strong>
-                                        </li>
-                                        <li class="d-flex align-items-center">
-                                            <i class="ei_icon_mobile icn text-center flex-shrink-0"><span class="sr-only">icon</span></i>
-                                            <strong class="text font-weight-normal"><a href="tel:011-4576-1101">011-4576-1101</a></strong>
-                                        </li>
-                                    </ul>
+                                   {!! $content[0] !!}
                                 </address>
                             </div>
 
@@ -99,16 +86,7 @@
                                 
                                     <address class="ctAddress text-dark">
                                         <h4>Registered Office</h4>
-                                        <ul class="list-unstyled">
-                                            <li class="d-flex align-items-center">
-                                                <i class="ei_icon_pin_alt icn text-center flex-shrink-0"><span class="sr-only">icon</span></i>
-                                                <strong class="text font-weight-normal">XIII/5612, Gandhi Market, Sardar Bazar, Delhi- 110006</strong>
-                                            </li>
-                                            <li class="d-flex align-items-center">
-                                                <i class="ei_icon_mobile icn text-center flex-shrink-0"><span class="sr-only">icon</span></i>
-                                                <strong class="text font-weight-normal"><a href="tel:011-2362-5413">011-2362-5413</a> /  <a href="tel:011-2355-6395">011-2355-6395</a></strong>
-                                            </li>
-                                        </ul>
+                                        {!! $content[1] !!}
                                     </address>
 
                                 </div>
@@ -116,16 +94,7 @@
                                 <div class="col-12 col-md-6 offset-xl-1 col-xl-6">
                                     <address class="ctAddress text-dark">
                                         <h4>Branch</h4>
-                                        <ul class="list-unstyled">
-                                            <li class="d-flex align-items-center">
-                                                <i class="ei_icon_pin_alt icn text-center flex-shrink-0"><span class="sr-only">icon</span></i>
-                                                <strong class="text font-weight-normal">Madar Gate, Agra Road, Aligarh-202001 (UP)</strong>
-                                            </li>
-                                            <li class="d-flex align-items-center">
-                                                <i class="ei_icon_mobile icn text-center flex-shrink-0"><span class="sr-only">icon</span></i>
-                                                <strong class="text font-weight-normal"><a href="tel:91-735-162-9000">+91-735-162-9000</a> /  <a href="tel:91-753-596-2000">+91-753-596-2000</a></strong>
-                                            </li>
-                                        </ul>
+                                        {!! $content[2] !!}
                                     </address>
 
                                  </div>

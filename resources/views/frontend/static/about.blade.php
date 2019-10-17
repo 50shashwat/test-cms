@@ -40,9 +40,7 @@
                                 </header>
                             </div>
                             <div class="col-12 col-md-8">
-                                <p>Over 6 decades, Harrison which has been brand leader in locks & hardware solution. Be fealess & desire for more from HARRISON with a bold thinking and rigorous craftsmanship combine to bring innovative, sturdy products.</p>
-                                    <br />
-                                <p> Harrison a brand, is one of the leading company known for providing best security & hardwaresolutions. We're celebrating 65+ years of setting the standards of excellences and pushing the limits of product design. whether we are bringing to you. </p>
+                               {!! $content[0] !!}
                             </div>
                         </div>
                         <!-- featuresList -->
@@ -50,29 +48,25 @@
                             <li class="hasOver">
                                 <i class="icn icmon_01 inaccessible flex-shrink-0"><span class="sr-only">icon</span></i>
                                 <div class="extraWrap">
-                                    <h3 class="fwSemiBold fontBase counter">20000000</h3>
-                                    <h4 class="font-weight-normal fontBase">Customers</h4>
+                                        {!! $content[4] !!}
                                 </div>
                             </li>
                             <li class="hasOver">
                                 <i class="icn icmon_02 inaccessible flex-shrink-0"><span class="sr-only">icon</span></i>
                                 <div class="extraWrap">
-                                    <h3 class="fwSemiBold fontBase counter">2000</h3>
-                                    <h4 class="font-weight-normal fontBase">Employees</h4>
+                                        {!! $content[5] !!}
                                 </div>
                             </li>
                             <li class="hasOver">
                                 <i class="icn icmon_03 inaccessible flex-shrink-0"><span class="sr-only">icon</span></i>
                                 <div class="extraWrap">
-                                    <h3 class="fwSemiBold fontBase counter">1000000</h3>
-                                    <h4 class="font-weight-normal fontBase">Hours Working</h4>
+                                        {!! $content[6] !!}
                                 </div>
                             </li>
                             <li class="hasOver">
                                 <i class="icn icmon_04 inaccessible flex-shrink-0"><span class="sr-only">icon</span></i>
                                 <div class="extraWrap">
-                                    <h3 class="fwSemiBold fontBase counter">76</h3>
-                                    <h4 class="font-weight-normal fontBase">Win Award</h4>
+                                        {!! $content[7] !!}
                                 </div>
                             </li>
                         </ul>
@@ -96,9 +90,7 @@
                                             <strong class="font-weight-normal hTitle d-block fontBase">Benefit</strong>
                                             <span class="d-block">Partner In Success</span>
                                         </h2>
-                                        <p>
-                                                If there's anyone we owe our success over 6 decades milestone to,it's you. Millions of customers in every home, accross the country who have shown their trust on every HARRISON product, that we have introduced. Here's looking forward to an even longer journey ahead with you!!
-                                        </p>
+                                        {!! $content[1] !!}
                                     </header>
                                     <!-- yoeListing -->
                                     <ul class="list-unstyled yoeListing pl-xl-5">
@@ -151,12 +143,7 @@
                                                 <span class="d-block">Our Vision</span>
                                             </h2>
                                             <p>
-<blockquote style="font-style:italic;font-size:20px"> 
-    "Vision without action is merely a dream. <br>
-Action without vision just passes the time. <br>
-Vision with action can change the world."</blockquote>
-                                                    
-                                                    HARRISON strives to be a trustworthy company, one of the best in security & door hardware segments and a preferred partner in all door, furniture, wardrobe, kitchen hardware & security solution segments. We also aim to be a forward- looking company, One that promotes a great working  environment and reliability for all our partners in success.
+                                                {!! $content[2] !!}
                                             </p>
                                         </header>
                                         <header class="headingHead">
@@ -166,16 +153,7 @@ Vision with action can change the world."</blockquote>
                                                     <span class="d-block">Our Mission</span>
                                                 </h2>
                                             <p>
-                                                    <blockquote style="font-style:italic;font-size:20px">  "The secret of success is consistency" </blockquote><br />
-
-                                                    Rapid globalization of our business in order to enrich the quality of life keeps Harrison's R&D department always ready to introduce their new series of the world class, modern, sleek and trendylooksyet strong and sturdy with safety feature products time to time that matches international specifications and standard at affordable prices. The following important pillars at which our company is based.
-                                                        <ul>
-                                                            <li> TRUST</li>
-                                                            <li> RELIABILITY AND INTEGRITY</li>
-                                                            <li> CUSTOMER SERVICE & SATISFACTION </li>
-                                                            <li> VALUE FOR MONEY </li>
-                                                        </ul>
-                                                    
+                                                {!! $content[3] !!}    
                                             </p>
                                         </header>
                                      

@@ -5,6 +5,7 @@ namespace App\Http\ViewComposers;
 use Illuminate\View\View;
 use App\Repositories\UserRepository;
 use App\Menu;
+use App\Page;
 
 class NavigationComposer
 {
@@ -20,7 +21,14 @@ class NavigationComposer
         if($navigations!=null){
             $navigations = $navigations->menuItems()->toJson();
         }
-        $view->with('navigations', json_decode($navigations, true) );
+        $footer=array();
+        $footer[] =   Page::where('type','footer-section-one')->first();
+        $footer[] =  Page::where('type','footer-section-two')->first();
+        $footer[] =  Page::where('type','footer-section-three')->first();
+        $footer[] =  Page::where('type','footer-section-four')->first();
+
+        
+        $view->with('footer',$footer);
     }
 
 }

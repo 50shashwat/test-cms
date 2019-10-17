@@ -32,9 +32,7 @@
         <!-- contactAreaBlock -->
         <section class="contactAreaBlock contentBlock">
             <div class="container">
-                <p>The information provided <strong><a href="#">www.harrisonlocks.com</a> (&ldquo;we&rdquo;, &ldquo;us&rdquo; or &ldquo;our&rdquo; on <a href="#">www.harrisonlocks.com</a></strong>(the &ldquo;Site&rdquo;) [and our mobile application] is for general informational purposes only. All information on the site [and our mobile application] is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, validity, reliability, availability or completeness&nbsp; or any information on the site [or our mobile application].</p>
-<p>Under no circumstances shall we have any liability to you or anyone for any loss or damage of any kind incurred as a result of the use of the site [or our mobile application] or reliance on any information provided on the site [and our mobile application]. Your use of the site [and our mobile application] and your reliance on any information on the site [and our mobile application] is solely at your own risk.</p>
-<p>External links Disclaimer for WEBSITE The site [and our mobile application] may contain or you may be sent through the site [or our mobile application] links to other websites or content belonging to or originating from third parties por links to websites and features in banners or other advertising. Such external links are not investigated, monitored or checked for accuracy, adequacy, validity, relaiability, availability or completeness by us.</p>
+                {!! $content !!}
             </div>
         </section>
 

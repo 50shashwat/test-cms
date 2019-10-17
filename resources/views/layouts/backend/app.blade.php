@@ -159,10 +159,10 @@
             </a>
             <div id="collapseFooter" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/admin/footer/one">Footer One</a>
-                    <a class="collapse-item" href="/admin/footer/two">Footer Two</a>
-                    <a class="collapse-item" href="/admin/footer/three">Footer Three</a>
-                    <a class="collapse-item" href="/admin/footer/four">Footer Four</a>
+                    <a class="collapse-item" href="/admin/pages/footer-section-one">Footer One</a>
+                    <a class="collapse-item" href="/admin/pages/footer-section-two">Footer Two</a>
+                    <a class="collapse-item" href="/admin/pages/footer-section-three">Footer Three</a>
+                    <a class="collapse-item" href="/admin/pages/footer-section-four">Footer Four</a>
                 </div>
             </div>
         </li>

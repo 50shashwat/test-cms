@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactConfirm;
 use App\Mail\ContactPost;
+use App\Mail\ResumeConfirm;
 use App\NewsletterSubscription;
+use App\Page;
 use Illuminate\Support\Facades\Mail;
 
 use Illuminate\Http\Request;
@@ -12,11 +15,24 @@ use Illuminate\Support\Facades\Redirect;
 class StaticController extends Controller
 {
     public function about(){
-        return view('frontend.static.about');
+        $content = array();
+        $content[] = Page::where('type','about-summary')->first()->content;
+        $content[] = Page::where('type','about-benefit')->first()->content;
+        $content[] = Page::where('type','about-our-vision')->first()->content;
+        $content[] = Page::where('type','about-our-mission')->first()->content;
+        $content[] = Page::where('type','about-section-one')->first()->content;
+        $content[] = Page::where('type','about-section-two')->first()->content;
+        $content[] = Page::where('type','about-section-three')->first()->content;
+        $content[] = Page::where('type','about-section-four')->first()->content;
+        return view('frontend.static.about', compact('content'));
     }
 
-    public function contact(){
-        return view('frontend.static.contact');
+    public function contact(){ 
+        $content = array();
+        $content[] = Page::where('type','contact-head-office')->first()->content;
+        $content[] = Page::where('type','contact-registered-office')->first()->content;
+        $content[] = Page::where('type','contact-branch')->first()->content;
+        return view('frontend.static.contact', compact('content'));
     }
 
     public function careers(){
@@ -24,11 +40,13 @@ class StaticController extends Controller
     }
 
     public function carpenterpathshala(){
-        return view('frontend.static.carpenterpathshala');
+        $content = Page::where('type','carpenter-pathshala')->first()->content;
+        return view('frontend.static.carpenterpathshala', compact('content'));
     }
 
     public function displaydisign(){
-        return view('frontend.static.displaydisign');
+        $content = Page::where('type','display-design')->first()->content;
+        return view('frontend.static.displaydisign', compact('content'));
     }
 
     public function channelpartnership(){
@@ -36,7 +54,8 @@ class StaticController extends Controller
     }
 
     public function helpline(){
-        return view('frontend.static.helpline');
+        $content = Page::where('type','helpline')->first()->content;
+        return view('frontend.static.helpline', compact('content'));
     }
 
     public function sendContact(Request $request){
@@ -63,34 +82,42 @@ class StaticController extends Controller
 
         NewsletterSubscription::create(array_merge($request->all(), ['resume' => $fileUrl]));
 
+        
+
         if($request->type=="careers"){
+            Mail::to($request->email)->send(new ResumeConfirm());
             Mail::to('resume@harrisonlocks.com')->send(new ContactPost($objDemo));
         }
         if($request->type=="newsletter"){
             //do nothing
         }
-        else
+        if($request->type !="careers" && $request->type != "newsletter"){       
+            Mail::to($request->email)->send(new ContactConfirm());
             Mail::to('exports@harrisonlocks.com')->send(new ContactPost($objDemo));
-
+        }
         return back()->with('success', 'Message Sent Successfully');
         
     }
 
     public function achievements(){
-        return view('frontend.static.achievements');
+        $content = Page::where('type','achievements')->first()->content;
+        return view('frontend.static.achievements', compact('content'));
     }
 
     public function terms(){
-        return view('frontend.static.terms');
+        $content = Page::where('type','terms')->first()->content;
+        return view('frontend.static.terms', compact('content'));
     }
 
     
     public function privacy(){
-        return view('frontend.static.privacy');
+        $content = Page::where('type','privacy')->first()->content;
+        return view('frontend.static.privacy', compact('content'));
     }
 
     
     public function disclaimer(){
-        return view('frontend.static.disclaimer');
+        $content = Page::where('type','disclaimer')->first()->content;
+        return view('frontend.static.disclaimer', compact('content'));
     }
 }
