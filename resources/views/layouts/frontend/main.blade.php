@@ -63,7 +63,7 @@
 		font-size:11px;
 	}
 	</style>
-
+	@yield('head')
 	<!-- include jQuery library -->
 	<script src="{{asset('js/jquery-3.3.1.min.js') }} "></script>
 	<script src="{{asset('bootstrap.min.js') }} "></script>

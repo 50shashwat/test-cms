@@ -86,7 +86,7 @@ class StaticController extends Controller
 
         if($request->type=="careers"){
             Mail::to($request->email)->send(new ResumeConfirm());
-            Mail::to('resume@harrisonlocks.com')->send(new ContactPost($objDemo));
+            Mail::to('resumes@harrisonlocks.com')->send(new ContactPost($objDemo));
         }
         if($request->type=="newsletter"){
             //do nothing
