@@ -105,8 +105,8 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
         $featured_image = "";
-        if($request->file('featured_image')){
-            $file = $request->file('featured_image');
+        if($request->file('featured_image1')){
+            $file = $request->file('featured_image1');
             $destinationPath = public_path().'/images/';
             $fileUrl = time()."_".trim(preg_replace('/\s+/', '', $file->getClientOriginalName()));
             $file->move($destinationPath,$destinationPath.$fileUrl);
@@ -118,7 +118,7 @@ class ProductController extends Controller
         $product->subcategory_id = $request->subcategory_id;
         $product->innercategory_id = $request->innercategory_id;
         $product->featured_image = $featured_image==""? $product->featured_image:$featured_image;
-        $product->content = $request->content;
+        $product->content = $request->content==""? ".": $request->content;
         $product->update();
 
         return redirect('admin/products')->with('message', 'Updated Successfully');
