@@ -104,7 +104,7 @@ class SubCategoriesController extends Controller
 
         $subcategory->name = $request->name;
         $subcategory->category_id = $request->category_id;
-        $subcategory->featured_image = $featured_image;
+        $subcategory->featured_image = $featured_image==""? $subcategory->featured_image: $featured_image;
         $subcategory->update();
 
         return redirect('admin/subcategories')->with('message', 'Updated Successfully');

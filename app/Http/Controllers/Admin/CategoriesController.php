@@ -101,7 +101,7 @@ class CategoriesController extends Controller
             $featured_image = $fileUrl;
         }
         $category->name = $request->name;
-        $category->featured_image = $featured_image;
+        $category->featured_image = $featured_image==""? $category->featured_image: $featured_image;
         $category->update();
 
         return redirect('admin/categories')->with('message', 'Updated Successfully');
