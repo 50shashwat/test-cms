@@ -103,9 +103,9 @@
                                         <ul class="list-unstyled navDropdownList">
                                             @foreach ($menus as $menuitem)
                                                 @if(sizeof($menuitem['subcategories'])==0 )
-                                                    <li class="nav-item"><a class="dropdown-item fwMedium text-uppercase" href="/products/{{$menuitem['id']}}"  aria-haspopup="true" >{{$menuitem['name']}}</a></li>
+                                                    <li class="dropdown-item"><a class="dropdown-item fwMedium text-uppercase" href="/products/{{$menuitem['id']}}"  aria-haspopup="true" >{{$menuitem['name']}}</a></li>
                                                 @else
-                                                    <li class="nav-item dropdown"><a class="dropdown-item fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <li class="dropdown-submenu"><a class="dropdown-item fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         {!! $menuitem['name'] !!}
                                                     </a>
                                                                     
@@ -116,7 +116,7 @@
                                                                 @if(sizeof($menusubitem['innercategories'])==0 )
                                                                     <li class="nav-item"><a class="dropdown-item fwMedium text-uppercase" href="/products/{{$menuitem['id']}}/{{$menusubitem['id']}}"  aria-haspopup="true" >{{$menusubitem['name']}}</a></li>
                                                                 @else
-                                                                <li class="nav-item dropdown"><a class="dropdown-item fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <li class="dropdown-submenu"><a class="dropdown-item fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     {{$menusubitem['name']}}
                                                                 </a>
                                                                                     

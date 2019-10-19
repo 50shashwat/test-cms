@@ -59,7 +59,7 @@
 		}
 	}
 
-	.pageMainNavigation.navbar-nav.pageMainNavigation02 .nav-link{
+	.pageMainNavigation.navbar-nav.pageMainNavigation02 .nav-link, .mainNavDropdown.dropdown-menu .dropdown-item{
 		font-size:11px;
 	}
 	</style>
