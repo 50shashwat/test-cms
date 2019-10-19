@@ -35,12 +35,12 @@ class ProductController extends Controller
         return view('frontend.products.index',compact('products'));
     }
 
-    public function subcategoryProducts($subcategoryId){
+    public function subcategoryProducts($categoryId, $subcategoryId){
         $products = Subcategory::find($subcategoryId)->products();
         return view('frontend.products.index',compact('products'));
     }
 
-    public function innercategoryProducts($innercategoryId){
+    public function innercategoryProducts($categoryId, $subcategoryId,$innercategoryId){
         $products = InnerCategory::find($innercategoryId)->products();
         return view('frontend.products.index',compact('products'));
     }
