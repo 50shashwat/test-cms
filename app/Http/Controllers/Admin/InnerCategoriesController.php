@@ -101,7 +101,7 @@ class InnerCategoriesController extends Controller
         }
         $innercategory->name = $request->name;
         $innercategory->subcategory_id = $request->subcategory_id;
-        $innercategory->featured_image = $featured_image;
+        $innercategory->featured_image = $featured_image==""? $innercategory->featured_image: $featured_image;
         $innercategory->update();
 
         return redirect('admin/innercategories')->with('message', 'Updated Successfully');
