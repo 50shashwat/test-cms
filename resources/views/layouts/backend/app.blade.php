@@ -61,11 +61,11 @@
       <hr class="sidebar-divider d-none d-md-block">
 
       <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFooter" aria-expanded="true" aria-controls="collapsePages">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#headingProduct" aria-expanded="true" aria-controls="collapsePages">
               <i class="fas fa-fw fa-folder"></i>
               <span>Products</span>
           </a>
-          <div id="collapseFooter" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div id="collapseFooter" class="collapse" aria-labelledby="headingProduct" data-parent="#accordionSidebar">
               <div class="bg-white py-2 collapse-inner rounded">
                   <a class="collapse-item" href="/admin/categories">Categories</a>
                   <a class="collapse-item" href="/admin/subcategories">Sub Categories</a>
