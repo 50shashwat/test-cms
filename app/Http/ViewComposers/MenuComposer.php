@@ -19,7 +19,7 @@ class MenuComposer
     public function compose(View $view)
     {
         
-        $menus =  Category::with(['subcategories.innercategories'])->get();
+        $menus =  Category::with(['subcategories.innercategories']);
         
         $view->with('menus', $menus);
     }
