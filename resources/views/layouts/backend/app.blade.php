@@ -65,7 +65,7 @@
               <i class="fas fa-fw fa-folder"></i>
               <span>Products</span>
           </a>
-          <div id="collapseFooter" class="collapse" aria-labelledby="headingProduct" data-parent="#accordionSidebar">
+          <div id="headingProduct" class="collapse" aria-labelledby="headingProduct" data-parent="#accordionSidebar">
               <div class="bg-white py-2 collapse-inner rounded">
                   <a class="collapse-item" href="/admin/categories">Categories</a>
                   <a class="collapse-item" href="/admin/subcategories">Sub Categories</a>
