@@ -118,7 +118,7 @@ class ProductController extends Controller
         $product->subcategory_id = $request->subcategory_id;
         $product->innercategory_id = $request->innercategory_id;
         $product->featured_image = $featured_image==""? $product->featured_image:$featured_image;
-        $product->content = $request->content==""? ".": $request->content;
+        $product->content = $request->content=="" ? ".": $request->content;
         $product->update();
 
         return redirect('admin/products')->with('message', 'Updated Successfully');
