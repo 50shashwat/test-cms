@@ -11,13 +11,15 @@ use Illuminate\Http\Request;
 class ApiController extends Controller
 {
     public function categories($id){
-        return Category::find($id)->subcategories();
+        return Category::find($id)->subcategories()->get();
     }
 
     
     public function subcategories($id){
-        return Subcategory::find($id)->innercategories();
+        return Subcategory::find($id)->innercategories()->get();
     }
+
+
 
     
 }

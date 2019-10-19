@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Mail\ContactConfirm;
 use App\Mail\ContactPost;
 use App\Mail\ResumeConfirm;
