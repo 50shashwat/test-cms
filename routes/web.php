@@ -25,7 +25,7 @@ Route::get('/careers', 'StaticController@careers')->name('careers');
 Route::get('/video-gallery', 'GalleryController@video')->name('video-gallery');
 Route::get('/carpenter-pathshaala', 'StaticController@carpenterpathshala')->name('carpenter-pathshala');
 Route::get('/display-and-design', 'StaticController@displaydisign')->name('carpenter-pathshala');
-Route::get('/blog', 'BlogController@index')->name('blog');
+Route::get('/blogs', 'BlogController@index')->name('blog');
 Route::get('/channel-partnership', 'StaticController@channelpartnership')->name('channel-partner');
 Route::get('/helpline-numbers', 'StaticController@helpline')->name('helpline');
 Route::get('/products/locks', 'ProductController@lock')->name('product-lock');
@@ -41,6 +41,8 @@ Route::get('/product-show/{productId}','ProductController@productshow')->name('p
 
 Route::post('/contact','StaticController@sendContact');
 Route::get('/achievement', 'StaticController@achievements')->name('achievements');
+
+Route::get('/blog-show/{id}','BlogController@show')->name('blog.show');
 
 Route::prefix('/admin')->group(function(){
     Route::get('/dashboard','Admin\AdminController@index')->name('admin.dashboard');

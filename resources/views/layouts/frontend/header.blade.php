@@ -143,7 +143,7 @@
                                 </li>
                                 
                                 <li class="nav-item @if (\Request::is('blog*')) active @endif">
-                                    <a class="nav-link fwMedium text-uppercase " href="/blog"  aria-haspopup="true" >Blog / Announcements</a>
+                                    <a class="nav-link fwMedium text-uppercase " href="/blogs"  aria-haspopup="true" >Blog / Announcements</a>
                                 </li>
                                 
                                 

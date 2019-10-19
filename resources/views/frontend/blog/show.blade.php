@@ -27,26 +27,21 @@
             </div>
         </nav>
     <div class="container" style="text-align:center;padding:40px">
+        <div class="row">
             <div class="row">
-                   
-                <div class="col-md-4  col-sm-6">
-                        <!-- widgetCtForm -->
-                        <aside class="widget widgetCtForm hasShadow bg-white mb-4">
-                                <a href="/blog-show/1" >
-                                        <img src="{{asset('blog/images/blog1.jpg')}}" class="img" style="width:300px;height:auto" />
-                                </a>
-                        </aside>
-                </div>
-
-                <div class="col-md-4  col-sm-6">
+                <div class="col-md-12  col-sm-12">
                     <!-- widgetCtForm -->
                     <aside class="widget widgetCtForm hasShadow bg-white mb-4">
-                            <a href="/blog-show/2" >
-                                    <img src="{{asset('blog/images/blog2.jpg')}}" class="img" style="width:300px;height:auto" />
-                            </a>
+                        @if($id==1)
+                        <img src="{{asset('blog/images/blog1.jpg')}}" class="img" style="width:100%;height:auto" />
+                        @else
+                            
+                        <img src="{{asset('blog/images/blog2.jpg')}}" class="img" style="width:100%;height:auto" />
+                        @endif
                     </aside>
                 </div>
             </div>
+        </div>
     </div>
 
 </main>
