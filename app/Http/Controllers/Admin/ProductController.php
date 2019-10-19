@@ -113,11 +113,11 @@ class ProductController extends Controller
             $featured_image = $fileUrl;
         }
 
-        $product->name = $request->name;
+        $product->title = $request->title;
         $product->category_id = $request->category_id;
         $product->subcategory_id = $request->subcategory_id;
         $product->innercategory_id = $request->innercategory_id;
-        $product->featured_image = $featured_image;
+        $product->featured_image = $featured_image==""? $product->featured_image:$featured_image;
         $product->content = $request->content;
         $product->update();
 
