@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\ViewComposers\MenuComposer;
 use App\Http\ViewComposers\NavigationComposer;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
@@ -28,5 +29,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
         View::composer(['layouts.frontend.footer'], NavigationComposer::class);
+        View::composer(['layouts.frontend.header'], MenuComposer::class);
     }
 }

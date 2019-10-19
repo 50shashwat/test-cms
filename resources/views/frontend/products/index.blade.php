@@ -2,23 +2,19 @@
 
 @section('content')
 <div class="container">
-        <div class="row mb-5 align-items-center">
-                <div class="col-12 col-md-5  col-xl-6">
-                        <!-- widgetCtForm -->
-                        <aside class="widget widgetCtForm hasShadow bg-white mb-4">
-                                <a href="/products/locks" class="btn btnTheme text-uppercase" data-hover="Lock">
-                                        <span class="d-block btnText"> {{ __('Lock') }} </span>
-                                </a>
-                        </aside>
-                </div>
-                <div class="col-12 col-md-5  col-xl-6">
-                        <!-- widgetCtForm -->
-                        <aside class="widget widgetCtForm hasShadow bg-white mb-4">
-                        <a href="/products/kitchen-accessories" class="btn btnTheme text-uppercase" data-hover="Kitchen Accessories">
-                                <span class="d-block btnText"> {{ __('Kitchen Accessories') }} </span>
+        <div class="row">
+        @foreach ($products as $product)
+        <div class="col-md-4  col-sm-6">
+                <!-- widgetCtForm -->
+                <aside class="widget widgetCtForm hasShadow bg-white mb-4">
+                        <a href="/product-show/{{$product->id}}" >
+                                <img src="{{asset('images')}}/{{$product->featured_image}}" class="img" style="width:300px;height:auto" />
+                                <h4 style="text-align:center">{{$product->title}}</h4>
                         </a>
-                        </aside>
-                </div>
+                </aside>
         </div>
+        @endforeach
+        </div>
+        
 </div>
 @endsection

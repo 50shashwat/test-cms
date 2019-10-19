@@ -100,6 +100,21 @@
           </div>
       </li>
 
+      <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFooter" aria-expanded="true" aria-controls="collapsePages">
+              <i class="fas fa-fw fa-folder"></i>
+              <span>Products</span>
+          </a>
+          <div id="collapseFooter" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+              <div class="bg-white py-2 collapse-inner rounded">
+                  <a class="collapse-item" href="/admin/categories">Categories</a>
+                  <a class="collapse-item" href="/admin/subcategories">Sub Categories</a>
+                  <a class="collapse-item" href="/admin/innercategories">Inner Categories</a>
+                  <a class="collapse-item" href="/admin/products">Product</a>
+              </div>
+          </div>
+      </li>
+
        <!-- Nav Item - About Us Collapse Menu -->
        <li class="nav-item">
           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseContact" aria-expanded="true" aria-controls="collapsePages">

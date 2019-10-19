@@ -34,7 +34,10 @@ Route::get('/products/kitchen-accessories', 'ProductController@kitchen_accessori
 Route::get('/terms-and-conditions','StaticController@terms')->name('terms');
 Route::get('/privacy-policy','StaticController@privacy')->name('privacy');
 Route::get('/disclaimer','StaticController@disclaimer')->name('disclaimer');
-
+Route::get('/products/{category}','ProductController@categoryProducts')->name('categoryproducts');
+Route::get('/products/{category}/{subcategory}','ProductController@subcategoryProducts')->name('subcategoryproducts');
+Route::get('/products/{category}/{subcategory}/{innercategory}','ProductController@categoryProducts')->name('innercategoryproducts');
+Route::get('/product-show/{productId}','ProductController@productshow')->name('productshow');
 
 Route::post('/contact','StaticController@sendContact');
 Route::get('/achievement', 'StaticController@achievements')->name('achievements');
@@ -48,5 +51,10 @@ Route::prefix('/admin')->group(function(){
     Route::post('/pages/{type}','Admin\PageController@storePage')->name('admin.pages');
     Route::get('/queries/{type}','Admin\PageController@queries')->name('admin.queries');
     Route::resource('/blog', 'Admin\BlogController');
+    Route::resource('/categories','Admin\CategoriesController');
+    Route::resource('/subcategories','Admin\SubCategoriesController');
+    Route::resource('/innercategories','Admin\InnerCategoriesController');
+    Route::resource('/products','Admin\ProductController');
+    
 });
 
