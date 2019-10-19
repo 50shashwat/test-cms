@@ -13,7 +13,7 @@ class Category extends Model
     ];
 
     public function subcategories(){
-        return $this->hasMany('App\Subcategory');
+        return $this->hasMany('App\Subcategory')->get();
     }
 
 

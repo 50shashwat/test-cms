@@ -80,6 +80,7 @@ class SubCategoriesController extends Controller
         
         $categories = Category::all();
         $subcategory = SubCategory::find($id);
+    
         return view('backend.products.subcategories.edit', compact('subcategory', 'categories'));
     }
 

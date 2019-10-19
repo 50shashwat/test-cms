@@ -3,19 +3,21 @@
 <div class="row form-group {{ $errors->has('category_id') ? 'has-error' : ''}}">
     {!! Form::label('category_id', 'Select Category', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-6">
-        <select name="category_id" id="category_id" class="form-control">
+        <select name="category_id"  class="form-control">
+            <option value="">Select None</option>
             @foreach ($categories as $item)
-                <option value="{{ $item->id }}"> {{ $item->name}}</option>
+                <option value="{{ $item->id }}" @if(isset($subcategory) && $item->id == $subcategory->category_id) selected  @endif> {{ $item->name}}</option>
             @endforeach
         </select>
+        {!! $errors->first('category_id', '<p class="help-block">:message</p>') !!}
     </div>
 </div> 
 
-<div class="row form-group {{ $errors->has('title') ? 'has-error' : ''}}">
-    {!! Form::label('title', 'Name of Sub Category*', ['class' => 'col-md-4 control-label']) !!}
+<div class="row form-group {{ $errors->has('name') ? 'has-error' : ''}}">
+    {!! Form::label('name', 'Name of Sub Category*', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-6">
-        {!! Form::text('title', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) !!}
-        {!! $errors->first('title', '<p class="help-block">:message</p>') !!}
+        {!! Form::text('name', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) !!}
+        {!! $errors->first('name', '<p class="help-block">:message</p>') !!}
     </div>
 </div>
 
@@ -23,6 +25,9 @@
 <div class="row form-group {{ $errors->has('featured_image') ? 'has-error' : ''}}">
     {!! Form::label('featured_image', 'Featured Image', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-6">
+        @if( isset($subcategory) && $subcategory->featured_image!="")
+            <img src="{{ asset('images/') }}/{{$subcategory->featured_image}}" style="width:100px;height:auto" />
+        @endif
         {!! Form::file('featured_image', null, ('' == 'required') ? ['class' => 'form-control'] : ['class' => 'form-control']) !!}
         {!! $errors->first('featured_image', '<p class="help-block">:message</p>') !!}
     </div>

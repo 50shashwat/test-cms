@@ -19,13 +19,11 @@ class Subcategory extends Model
     }
 
     public function innercategories(){
-        return $this->hasMany('App\InnerCategory');
+        return $this->hasMany('App\InnerCategory')->get();
     }
 
     public function products(){
         return $this->hasMany('App\Product')->get();
     }
-
-
 
 }
