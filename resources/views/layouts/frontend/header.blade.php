@@ -106,7 +106,7 @@
                                                     <li class="nav-item"><a class="dropdown-item fwMedium text-uppercase" href="/products/{{$menuitem['id']}}"  aria-haspopup="true" >{{$menuitem['name']}}</a></li>
                                                 @else
                                                     <li class="nav-item dropdown"><a class="dropdown-item fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        {{$menuitem['name']}}
+                                                        {!! $menuitem['name'] !!}
                                                     </a>
                                                                     
                                                     <div class="dropdown-menu mainNavDropdown text-uppercase">
