@@ -31,18 +31,24 @@ class ProductController extends Controller
     }
 
     public function categoryProducts($categoryId){
+        $category = Category::find($categoryId);
         $products = Category::find($categoryId)->products();
-        return view('frontend.products.index',compact('products'));
+        return view('frontend.products.index',compact('products','category'));
     }
 
     public function subcategoryProducts($categoryId, $subcategoryId){
+        $category = Category::find($categoryId);
+        $subcategory = Subcategory::find($subcategoryId);
         $products = Product::where('subcategory_id', $subcategoryId)->get();
-        return view('frontend.products.index',compact('products'));
+        return view('frontend.products.index',compact('products','category','subcategory'));
     }
 
     public function innercategoryProducts($categoryId, $subcategoryId,$innercategoryId){
+        $category = Category::find($categoryId);
+        $subcategory = Subcategory::find($subcategoryId);
+        $innercategory = InnerCategory::find($innercategoryId);
         $products = Product::where('innercategory_id', $innercategoryId)->get();
-        return view('frontend.products.index',compact('products'));
+        return view('frontend.products.index',compact('products','category','subcategory','innercategory'));
     }
 
     public function productshow($productId){
