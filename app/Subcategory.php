@@ -23,7 +23,7 @@ class Subcategory extends Model
     }
 
     public function products(){
-        return $this->hasMany('App\Product')->get();
+        return $this->hasMany('App\Product');
     }
 
 }

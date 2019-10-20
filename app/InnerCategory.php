@@ -15,10 +15,8 @@ class InnerCategory extends Model
     ];
 
     public function subcategory(){
-        return $this->belongsTo('App\SubCategory');
+        return $this->belongsTo('App\SubCategory','subcategory_id','id');
     }
 
-    public function products(){
-        return $this->hasMany('App\Product')->get();
-    }
+   
 }

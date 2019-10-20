@@ -5,7 +5,7 @@
     
     <div class="row">
         <div class="col-md-6">
-            <h2>Sub Categories</h2>
+            <h2>Inner Categories</h2>
         </div>
         <div class="col-md-6" style="text-align:right">
             <a href="/admin/innercategories/create" class="btn btn-outline-dark" >Create New Inner Category</a>

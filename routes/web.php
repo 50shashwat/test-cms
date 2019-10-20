@@ -34,9 +34,9 @@ Route::get('/products/kitchen-accessories', 'ProductController@kitchen_accessori
 Route::get('/terms-and-conditions','StaticController@terms')->name('terms');
 Route::get('/privacy-policy','StaticController@privacy')->name('privacy');
 Route::get('/disclaimer','StaticController@disclaimer')->name('disclaimer');
-Route::get('/products/{category}','ProductController@categoryProducts')->name('categoryproducts');
+Route::get('/products/{category}/{subcategory}/{innercategory}','ProductController@innercategoryProducts')->name('innercategoryproducts');
 Route::get('/products/{category}/{subcategory}','ProductController@subcategoryProducts')->name('subcategoryproducts');
-Route::get('/products/{category}/{subcategory}/{innercategory}','ProductController@categoryProducts')->name('innercategoryproducts');
+Route::get('/products/{category}','ProductController@categoryProducts')->name('categoryproducts');
 Route::get('/product-show/{productId}','ProductController@productshow')->name('productshow');
 
 Route::post('/contact','StaticController@sendContact');

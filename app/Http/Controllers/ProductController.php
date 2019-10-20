@@ -36,12 +36,12 @@ class ProductController extends Controller
     }
 
     public function subcategoryProducts($categoryId, $subcategoryId){
-        $products = Subcategory::find($subcategoryId)->products();
+        $products = Product::where('subcategory_id', $subcategoryId)->get();
         return view('frontend.products.index',compact('products'));
     }
 
     public function innercategoryProducts($categoryId, $subcategoryId,$innercategoryId){
-        $products = InnerCategory::find($innercategoryId)->products();
+        $products = Product::where('innercategory_id', $innercategoryId)->get();
         return view('frontend.products.index',compact('products'));
     }
 
