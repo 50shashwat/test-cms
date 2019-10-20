@@ -15,6 +15,8 @@
                                         Home
                                 </a>
                                 </li>
+                                <li class="breadcrumb-item">Product</li>
+                                
                                 @if(isset($product->category))
                                         <li class="breadcrumb-item " aria-current="page"> {{ ucfirst($product->category->name) }} </li>
                                 @endif
