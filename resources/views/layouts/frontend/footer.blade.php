@@ -9,7 +9,6 @@
                 <div class="row">
                     <div class="col-12 col-md-7">
                         <h3 class="text-white text-uppercase">Sign up for our newsletter:</h3>
-                        <p>Join over 5,000 people who get free</p>
                     </div>
                     <div class="col-12 col-md-5">
                         
