@@ -64,7 +64,7 @@ class ProductController extends Controller
 
         $product->save();
 
-        return redirect()->back()->with('message', 'Successfully Created');
+        return redirect('admin/products')->with('message', 'Successfully Created');
     }
 
     /**
@@ -121,7 +121,7 @@ class ProductController extends Controller
         $product->content = $request->content=="" ? ".": $request->content;
         $product->update();
 
-        return redirect()->back()->with('message', 'Updated Successfully');
+        return redirect('admin/products')->with('message', 'Updated Successfully');
     }
 
     /**
