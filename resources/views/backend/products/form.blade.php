@@ -4,6 +4,7 @@
     {!! Form::label('category_id', 'Select Category', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-6">
         <select name="category_id" class="form-control" id="category"  onchange="changeCategory()">
+            <option value="">Select None</option>
             @foreach ($categories as $item)
                 <option value="{{ $item->id }}"  @if(isset($product) && $item->id == $product->category_id) selected @endif> {{ $item->name}}</option>
             @endforeach
