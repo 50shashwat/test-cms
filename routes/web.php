@@ -21,7 +21,7 @@ Route::get('/about-us', 'StaticController@about')->name('about');
 Route::get('/contact-us', 'StaticController@contact')->name('contact');
 Route::get('/careers', 'StaticController@careers')->name('careers');
 Route::get('/video-gallery', 'GalleryController@video')->name('video-gallery');
-Route::get('/carpenter-pathshaala', 'StaticController@carpenterpathshala')->name('carpenter-pathshala');
+Route::get('/application-solutions', 'StaticController@carpenterpathshala')->name('carpenter-pathshala');
 Route::get('/display-and-design', 'StaticController@displaydisign')->name('carpenter-pathshala');
 Route::get('/blogs', 'BlogController@index')->name('blog');
 Route::get('/channel-partnership', 'StaticController@channelpartnership')->name('channel-partner');

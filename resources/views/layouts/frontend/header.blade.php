@@ -163,8 +163,8 @@
                                     <a class="nav-link fwMedium text-uppercase " href="/video-gallery">Video gallery </a>
                                 </li>
                                 
-                                <li class="nav-item @if (\Request::is('carpenter-pathshaala*')) active @endif">
-                                    <a class="nav-link fwMedium text-uppercase " href="/carpenter-pathshaala">Carpenter pathshala</a>
+                                <li class="nav-item @if (\Request::is('application*')) active @endif">
+                                    <a class="nav-link fwMedium text-uppercase " href="/application-solutions">Applications &amp; Solutions</a>
                                 </li>
                                 
                                 <li class="nav-item  @if (\Request::is('display-and-design*')) active @endif">
