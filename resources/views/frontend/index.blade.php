@@ -195,23 +195,17 @@
                 </div>
             </div>
             <div class="row wow fadeInUp" data-wow-delay="0.1s">
+                @foreach ($posts as $item)
                 <div class="col-12 col-md-6 col-lg-4">
-                    <!-- ltPostColumn -->
-                    <article class="ltPostColumn ltPostColumn02 hasOver">
-                                    <a href="/blog-show/1" >
-                                            <img src="{{asset('blog/images/blog1.jpg')}}" class="img" style="width:300px;height:auto" />
-                                    </a>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <!-- ltPostColumn -->
-                    <article class="ltPostColumn ltPostColumn02 hasOver">
-                        <!-- aligncenter -->
-                        <a href="/blog-show/2" >
-                            <img src="{{asset('blog/images/blog2.jpg')}}" class="img" style="width:300px;height:auto" />
-                        </a>
-                    </article>
-                </div>
+                        <!-- ltPostColumn -->
+                        <article class="ltPostColumn ltPostColumn02 hasOver">
+                            <a href="/blog-show/{{$item->id}}" >
+                                {!! $item->content !!}
+                            </a>
+                        </article>
+                    </div>      
+                @endforeach
+                
             </div>
         </div>
     </section>

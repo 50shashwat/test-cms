@@ -8,6 +8,7 @@ use App\Mail\ContactPost;
 use App\Mail\ResumeConfirm;
 use App\NewsletterSubscription;
 use App\Page;
+use App\Post;
 use Illuminate\Support\Facades\Mail;
 
 use Illuminate\Http\Request;
@@ -15,6 +16,12 @@ use Illuminate\Support\Facades\Redirect;
 
 class StaticController extends Controller
 {
+
+    public function home(){
+        $posts = Post::orderBy('id','desc')->limit(3)->get();
+        return view('frontend.index', compact('posts'));
+    }
+
     public function about(){
         $content = array();
         $content[] = Page::where('type','about-summary')->first()->content;
