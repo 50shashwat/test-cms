@@ -18,7 +18,7 @@
                                 <li class="breadcrumb-item">Product</li>
                                 
                                 @if(isset($category))
-                                        <li class="breadcrumb-item " aria-current="page"> {{ ucfirst($category->name) }} </li>
+                                        <li class="breadcrumb-item " aria-current="page"> {!! ucfirst($category->name) !!} </li>
                                 @endif
                                 
                                 @if(isset($subcategory))
