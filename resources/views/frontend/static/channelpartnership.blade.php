@@ -51,11 +51,11 @@
                                             <input type="hidden" name="type" value="channel" />
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <input name="name" type="text" class="form-control w-100 d-block" placeholder="Name *">
+                                                <input name="name" onkeyup="this.value=this.value.replace(/[^a-z,^A-Z,^ ]/g,'');" type="text" class="form-control w-100 d-block" placeholder="Name *">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <input name="phone" type="tel" class="form-control w-100 d-block" placeholder="Phone">
+                                                <input name="phone"  onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"  type="tel" class="form-control w-100 d-block" placeholder="Phone">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">

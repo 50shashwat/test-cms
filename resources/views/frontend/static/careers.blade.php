@@ -49,11 +49,11 @@
                                             <input type="hidden" name="type" value="careers" />
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <input type="text" name="name" class="form-control w-100 d-block" required placeholder="Name *">
+                                                <input type="text" onkeyup="this.value=this.value.replace(/[^a-z,^A-Z,^ ]/g,'');" name="name" class="form-control w-100 d-block" required placeholder="Name *">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <input type="tel" name="phone" class="form-control w-100 d-block" required placeholder="Phone">
+                                                <input type="tel" id="phone" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" name="phone" class="form-control w-100 d-block" required placeholder="Phone">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">
@@ -62,8 +62,9 @@
                                             <!-- form group -->
 
                                             <div class="form-group">
-                                                <label for="resume">Upload Resume (&lt; 2MB)</label>
-                                                <input type="file" name="resume" class="form-control w-100 d-block" required placeholder="Resume">
+                                                <label for="resume">Upload Resume (&lt; 2MB) [PDF, XLSX, CSV, DOCX]</label>
+                                                <input type="file" accept=
+                                                "application/msword, application/vnd.ms-excel,text/plain, application/pdf" name="resume" class="form-control w-100 d-block" required placeholder="Resume">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">
@@ -94,4 +95,23 @@
 
 </main>
 
+@endsection
+
+@section('script')
+    <script>
+    $('#phone').on('keydown keyup', function(e){
+        if ($(this).val().length >= 10 
+            && e.keyCode !== 46 // keycode for delete
+            && e.keyCode !== 8 // keycode for backspace
+            ) {
+            e.preventDefault();
+            
+        }
+    });
+
+    $(document).ready(function(){
+        $("#phone").numeric();
+    });
+
+    </script>
 @endsection

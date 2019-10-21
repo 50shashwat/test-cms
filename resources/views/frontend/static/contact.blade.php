@@ -58,11 +58,11 @@
                                             <input type="hidden" name="type" value="contact" />
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <input type="text" name="name" class="form-control w-100 d-block" placeholder="Name *">
+                                                <input type="text" onkeyup="this.value=this.value.replace(/[^a-z,^A-Z,^ ]/g,'');" name="name" class="form-control w-100 d-block" placeholder="Name *">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">
-                                                <input type="tel" name="phone" class="form-control w-100 d-block" placeholder="Contact Number">
+                                                <input type="tel"  onkeyup="this.value=this.value.replace(/[^0-9]/g,'');"  name="phone" class="form-control w-100 d-block" placeholder="Contact Number">
                                             </div>
                                             <!-- form group -->
                                             <div class="form-group">
