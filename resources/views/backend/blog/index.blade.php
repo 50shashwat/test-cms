@@ -12,9 +12,9 @@
                 <a href="/admin/blog/create" class="btn btn-primary">Create Post</a>
             </div>
         </div>
-        @if (session('success'))
+        @if (session('message'))
             <div class="alert alert-success">
-                {{ session('success') }}
+                {{ session('message') }}
             </div>
         @endif
 
@@ -36,10 +36,19 @@
             <td>{{$post->created_at}}</td>
             <td>
                 <a href="/admin/blog/{{$post->id}}/edit" class="btn btn-primary">Edit</a>
-                <form action="/admin/blog/{{$post->id}}" method="delete">
-                    @csrf
-                    <input type="submit" name="submit" value="Delete" title="Delete Blog Post" class="btn btn-danger" />
-                </form>
+                {{ Form::open([
+                    'method'=>'DELETE',
+                    'url' => ['/admin/blog', $post->id],
+                    'style' => 'display:inline'
+                ]) }}
+                    {{ Form::button('<i class="fa fa-trash-o" aria-hidden="true"></i> Delete', array(
+                            'type' => 'submit',
+                            'class' => 'btn btn-outline-danger',
+                            'title' => 'Delete Category',
+                            'onclick'=>'return confirm("Confirm delete?")'
+                    )) }}
+                {{ Form::close() }}
+
             </td>
             </tr>
             @endforeach

@@ -21,7 +21,7 @@
                     </div>
                     <div class="col-12 col-md-5 d-none d-md-flex align-items-md-center justify-content-md-end">
                         <!-- title -->
-                        <strong class="title d-block text-right fontRoboto fwMedium text-capitalize text-dark">Blog/Newsletter</strong>
+                    <strong class="title d-block text-right fontRoboto fwMedium text-capitalize text-dark">{{$post->title}}</strong>
                     </div>
                 </div>
             </div>
@@ -32,13 +32,9 @@
                 <div class="col-md-12  col-sm-12">
                     <!-- widgetCtForm -->
                     <aside class="widget widgetCtForm hasShadow bg-white mb-4">
-                        @if($id==1)
-                        <img src="{{asset('blog/images/blog1.jpg')}}" class="img" style="width:100%;height:auto" />
-                        @else
-                            
-                        <img src="{{asset('blog/images/blog2.jpg')}}" class="img" style="width:100%;height:auto" />
-                        @endif
+                            {!! $post->content !!}
                     </aside>
+                            
                 </div>
             </div>
         </div>

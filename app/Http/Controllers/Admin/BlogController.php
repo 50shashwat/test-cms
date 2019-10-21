@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Post;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Auth;
 
 class BlogController extends Controller
 {
@@ -50,7 +50,7 @@ class BlogController extends Controller
             file_put_contents($path, $data);
  
             $img->removeattribute('src');
-            $img->setattribute('src', $image_name);
+            $img->setattribute('src','/images/'. $image_name);
         }
  
         $detail = $dom->savehtml();
@@ -59,6 +59,7 @@ class BlogController extends Controller
         $post->title = $request->title;
         $post->slug = $request->slug;
         $post->posted_at = new Carbon();
+        $post->author_id = Auth::guard('admin')->user()->id;
 
         $post->save();
         
@@ -76,5 +77,12 @@ class BlogController extends Controller
 
     public function create(){
         return view('backend.blog.create');
+    }
+
+    public function destroy($id){
+        
+        $res = Post::find($id)->delete();
+        $message = $res ? "Deleted Succesfully": "Unable to delete";
+        return redirect('admin/blog')->with('message',$message);
     }
 }

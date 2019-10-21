@@ -74,6 +74,17 @@
               </div>
           </div>
       </li>
+
+      
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+      
+      <li class="nav-item">
+          <a class="nav-link collapsed" href="/admin/blog" >
+              <i class="fas fa-fw fa-file"></i>
+              <span>Blog</span>
+          </a>
+      </li>
     
       <!-- Heading -->
       <!-- Nav Item - User Information -->

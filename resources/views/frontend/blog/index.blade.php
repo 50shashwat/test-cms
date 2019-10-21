@@ -28,25 +28,19 @@
         </nav>
     <div class="container" style="text-align:center;padding:40px">
             <div class="row">
-                   
-                <div class="col-md-4  col-sm-6">
+                @foreach ($posts as $item)
+                    <div class="col-md-4  col-sm-6">
                         <!-- widgetCtForm -->
                         <aside class="widget widgetCtForm hasShadow bg-white mb-4">
-                                <a href="/blog-show/1" >
-                                        <img src="{{asset('blog/images/blog1.jpg')}}" class="img" style="width:300px;height:auto" />
+                                <a href="/blog-show/{{$item->id}}" >
+                                        {!!$item->content!!}
                                 </a>
                         </aside>
-                </div>
-
-                <div class="col-md-4  col-sm-6">
-                    <!-- widgetCtForm -->
-                    <aside class="widget widgetCtForm hasShadow bg-white mb-4">
-                            <a href="/blog-show/2" >
-                                    <img src="{{asset('blog/images/blog2.jpg')}}" class="img" style="width:300px;height:auto" />
-                            </a>
-                    </aside>
-                </div>
+                    </div>
+                @endforeach
             </div>
+            
+        {{ $posts->links() }}
     </div>
 
 </main>
