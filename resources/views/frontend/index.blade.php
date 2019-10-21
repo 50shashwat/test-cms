@@ -1,6 +1,12 @@
 @extends('layouts.frontend.main')
 
 
+@section('script')
+    <script>
+            $('#popup').modal('show');
+    </script>
+@endsection
+
 @section('content')
 <main>
     <!-- bannerSliderBlock -->
@@ -213,6 +219,7 @@
 
 
 
+
 <div id="myModal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -234,6 +241,28 @@
         </div>
     </div>
     
+
+    
+
+<div id="popup" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="top:100px">
+            <div class="modal-header">
+                
+            </div>
+            <div class="modal-body">
+                <img src="images/popup.jpg" alt="" style="width: 100%; height: auto" />
+            </div>
+            <div class="modal-footer">
+                <button class="btn btnTheme text-uppercase" type="button" data-hover="Close"  data-dismiss="modal">
+                    <span class="d-block btnText">Close</span>
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
     
     @if (session('success'))
     <script >
