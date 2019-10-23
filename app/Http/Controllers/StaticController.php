@@ -128,4 +128,18 @@ class StaticController extends Controller
         $content = Page::where('type','disclaimer')->first()->content;
         return view('frontend.static.disclaimer', compact('content'));
     }
+
+    public function aboutpage($type){
+        $page = Page::where('type',$type)->first();
+        if($page!=null){
+            $page->title = ucwords(str_replace("-"," ", $page->type)," ");
+        }
+        else{
+            $page = new Page();
+            $page->content = "<h2>No Content Found</h2>";
+            $page->title = "Not Found";
+            $page->type = $type;
+        }
+        return view('frontend.page.index', compact('page'));
+    }
 }

@@ -39,7 +39,6 @@
                     {!! $footer[0]->content !!}
                     <!-- copyrightWrap -->
                     <div class="copyrightWrap">
-                        <p>Copyright &copy; 2019 <a href="/">Harrison Locks</a>.</p>
                     </div>
                 </div>
                 

@@ -55,4 +55,30 @@ class ProductController extends Controller
         $product = Product::with('category','subcategory','innercategory')->find($productId);
         return view('frontend.products.show', compact('product'));
     }
+
+    public function searchproduct(Request $request){
+        $products = array();
+
+        $categoryProducts = Category::query()->where('name','LIKE',"%{$request->name}%")->get();
+        $subcategoryProducts = SubCategory::query()->where('name','LIKE',"%{$request->name}%")->get();
+        $innercategoryProducts = InnerCategory::query()->where('name','LIKE',"%{$request->name}%")->get();
+        $productsSearchs = Product::query()->where('title','LIKE',"%{$request->name}%")->with('category','subcategory','innercategory')->get();
+        
+        foreach($categoryProducts as $categoryProduct)
+        {
+            $products = array_merge($products, Product::where('category_id', $categoryProduct->id)->with('category')->get()->toArray());
+        }
+        foreach($subcategoryProducts as $subcategoryProduct)
+        {
+            $products = array_merge($products,Product::where('subcategory_id', $subcategoryProduct->id)->with('category','subcategory')->get()->toArray());
+        }
+        foreach($innercategoryProducts as $innercategoryProduct)
+        {
+            $products = array_merge($products,Product::where('innercategory_id', $innercategoryProduct->id)->with('category','subcategory','innercategory')->get()->toArray());
+        }
+        $products = array_merge($products,$productsSearchs->toArray());
+        
+        $products = collect($products);
+        return view('frontend.page.search', compact('products'));
+    }
 }

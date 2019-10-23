@@ -13,6 +13,8 @@
 
 Route::get('/', 'StaticController@home')->name('home');
 
+Route::get('/about/{type}', 'StaticController@aboutpage')->name('aboutpage');
+Route::post('/search', 'ProductController@searchproduct')->name('searchpage');
 Auth::routes();
 
 Route::get('/home.html', 'StaticController@home')->name('home');

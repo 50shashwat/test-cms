@@ -99,8 +99,11 @@
               <div class="bg-white py-2 collapse-inner rounded">
                   <a class="collapse-item" href="/admin/pages/about-summary">Summary</a>
                   <a class="collapse-item" href="/admin/pages/about-benefit">Benefit</a>
-                  <a class="collapse-item" href="/admin/pages/about-our-vision">Our Vision</a>
-                  <a class="collapse-item" href="/admin/pages/about-our-mission">Our Mission</a>
+                  <a class="collapse-item" href="/admin/pages/mission-and-vision">Our Mission &amp; Vision</a>
+                  <a class="collapse-item" href="/admin/pages/company-profile">Company Profile</a>
+                  <a class="collapse-item" href="/admin/pages/message-from-ceo">Message From CEO</a>
+                  <a class="collapse-item" href="/admin/pages/connect-from-fb">Connect From FB</a>
+                  <a class="collapse-item" href="/admin/pages/our-clients">Our Clients</a>
                   <div class="collapse-divider"></div>
                   <h6 class="collapse-header">Other Sections:</h6>
                   <a class="collapse-item" href="/admin/pages/about-section-one">Section One</a>

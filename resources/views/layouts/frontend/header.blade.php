@@ -26,43 +26,18 @@
                                 </div>
                                 <div class="col-9 col-lg-6 d-flex justify-content-end position-static">
                                     <!-- topBarSearchForm -->
-                                    <form action="javascript:void(0);" class="topBarSearchForm topBarSearchForm02 d-md-none">
-                                        <!-- searhFormCollpase -->
-                                        <div class="form-group collapse mb-0" id="searhFormCollpase">
-                                            <input type="text" class="form-control d-block" placeholder="Search&hellip;">
-                                            <button type="button" class="ei_icon_search buttonReset"><span class="sr-only">search</span></button>
-                                        </div>
-                                    </form>
                                     <!-- loginLinksList -->
                                     
                                     <ul class="list-unstyled loginLinksList loginLinksList02 text-capitalize d-flex mb-0">
-                                        
-                                    @guest
-                                        <li class="hasIcon">
-                                            <i class="ei_icon_lock icn"><span class="sr-only">icon</span></i>
-                                            <a class="d-none d-md-block" href="{{ route('login') }}">{{ __('Login') }} </a>
-                                        </li>
-                                        @if (Route::has('register'))
-                                            <li class="d-none d-md-block">
-                                                <a  href="{{ route('register') }}">{{ __('Register') }}</a>
-                                            </li>
-                                        @endif
-                                    @else
-                                        <li class="nav-item  ">
-                                                {{ Auth::user()->name }} 
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('logout') }}"
-                                                onclick="event.preventDefault();
-                                                              document.getElementById('logout-form').submit();">
-                                                 {{ __('Logout') }}
-                                             </a>
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                                @csrf
-                                            </form>
-                                        </li>
-                                    @endguest
-                
+                                        <form action="/search" method="post" class="topBarSearchForm topBarSearchForm02 ">
+                                            <!-- searhFormCollpase -->
+                                            @csrf
+                                            <div class="form-group collapse mb-0" id="searhFormCollpase">
+                                                <input type="text" class="form-control d-block" placeholder="Search&hellip;" style="border: 1px solid #ccc;padding: 5px 20px;margin: 5px;margin-right: 30px;border-radius: 12px;" name="name">
+                                                <button type="button" class="ei_icon_search buttonReset"><span class="sr-only">search</span></button>
+                                            </div>
+                                        </form>
+                                          
                                     </ul>
                                 </div>
                             </div>
@@ -90,9 +65,22 @@
                         <div class="collapse navbar-collapse mainNavCollapse mainNavCollapse02" id="pageMainNavCollapse">
                             <!-- pageMainNavigation navbar nav -->
                             <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end">
-                                <li class="nav-item @if (\Request::is('/')) active @endif">
-                                    <a class="nav-link fwMedium text-uppercase " href="/"  aria-haspopup="true" >Home</a>
+                                
+                                <li class="nav-item dropdown  @if (\Request::is('about*')) active @endif"">
+                                    <a class="nav-link fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                                    <div class="dropdown-menu mainNavDropdown text-uppercase">
+                                        <ul class="list-unstyled navDropdownList">
+                                            <li>
+                                                <a class="dropdown-item" href="/about/company-profile">Company Profile</a>
+                                                <a class="dropdown-item" href="/about/mission-and-vision">Mission &amp; Vision</a>
+                                                <a class="dropdown-item" href="/about/message-from-ceo">Message From CEO </a>
+                                                <a class="dropdown-item" href="/about/connect-from-fb">Connect From FB</a>
+                                                <a class="dropdown-item" href="/about/our-clients">Our Clients</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
+
                                 <li class="nav-item dropdown @if (\Request::is('products*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Products
@@ -141,10 +129,12 @@
                                         </ul>
                                     </div>
                                 </li>
-                                
-                                <li class="nav-item @if (\Request::is('blog*')) active @endif">
-                                    <a class="nav-link fwMedium text-uppercase " href="/blogs"  aria-haspopup="true" >Blog / Announcements</a>
+
+                                <li class="nav-item @if (\Request::is('application*')) active @endif">
+                                    <a class="nav-link fwMedium text-uppercase " href="/application-solutions">Applications &amp; Solutions</a>
                                 </li>
+                                
+                                
                                 
                                 
                                 <li class="nav-item @if (\Request::is('achievement*')) active @endif">
@@ -163,9 +153,7 @@
                                     <a class="nav-link fwMedium text-uppercase " href="/video-gallery">Video gallery </a>
                                 </li>
                                 
-                                <li class="nav-item @if (\Request::is('application*')) active @endif">
-                                    <a class="nav-link fwMedium text-uppercase " href="/application-solutions">Applications &amp; Solutions</a>
-                                </li>
+                              
                                 
                                 <li class="nav-item  @if (\Request::is('display-and-design*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/display-and-design">Display and Design </a>

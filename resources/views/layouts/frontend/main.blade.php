@@ -23,6 +23,8 @@
 			margin-top:30px;
 		}
 	</style>
+	<link rel="icon" href="favicon.jpg" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.jpg" type="image/x-icon"/>
 	<!-- include the site Fontsicon stylesheet -->
 	<link rel="stylesheet" href="{{ asset('css/fontsicon.css') }}">
 	<!-- include the site Plugins stylesheet -->
@@ -62,6 +64,9 @@
 	.pageMainNavigation.navbar-nav.pageMainNavigation02 .nav-link, .mainNavDropdown.dropdown-menu .dropdown-item{
 		font-size:11px;
 	}
+	.loginLinksList.loginLinksList02{
+		padding:0px
+	}
 	</style>
 	@yield('head')
 	<!-- include jQuery library -->
@@ -88,7 +93,8 @@
 	<!-- include custom JavaScript -->
 	<script src="{{asset('js/jquery.main.js') }}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=650492478678159&autoLogAppEvents=1"></script>
 	@yield('script')
 </body>
 </html>
