@@ -65,8 +65,11 @@
                         <div class="collapse navbar-collapse mainNavCollapse mainNavCollapse02" id="pageMainNavCollapse">
                             <!-- pageMainNavigation navbar nav -->
                             <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end">
-                                
-                                <li class="nav-item dropdown  @if (\Request::is('about*')) active @endif"">
+                                <li class="nav-item @if (\Request::is('/')) active @endif">
+                                    <a class="nav-link fwMedium text-uppercase " href="/"  aria-haspopup="true" >Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown  @if (\Request::is('about*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
                                     <div class="dropdown-menu mainNavDropdown text-uppercase">
                                         <ul class="list-unstyled navDropdownList">
@@ -134,21 +137,18 @@
                                     <a class="nav-link fwMedium text-uppercase " href="/application-solutions">Applications &amp; Solutions</a>
                                 </li>
                                 
-                                
-                                
-                                
                                 <li class="nav-item @if (\Request::is('achievement*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/achievement"  aria-haspopup="true" >Achievements</a>
                                 </li>
-                               
 
-                                <li class="nav-item @if (\Request::is('careers*')) active @endif">
-                                    <a class="nav-link fwMedium text-uppercase " href="/careers"  aria-haspopup="true" >Careers</a>
-                                </li>
+                              
                                 
                             </ul>
                             
                             <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end">            
+                                <li class="nav-item @if (\Request::is('careers*')) active @endif">
+                                    <a class="nav-link fwMedium text-uppercase " href="/careers"  aria-haspopup="true" >Careers</a>
+                                </li>
                                 <li class="nav-item @if (\Request::is('video-gallery*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/video-gallery">Video gallery </a>
                                 </li>
