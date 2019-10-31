@@ -66,6 +66,25 @@
                                                 <input type="file" accept=
                                                 "application/msword, application/vnd.ms-excel,text/plain, application/pdf" name="resume" class="form-control w-100 d-block" required placeholder="Resume">
                                             </div>
+                                            <div class="form-group">
+                                                <label for="others">Select Job Post</label>
+                                                <select name="others" class="form-control" id="other" onchange="checkForOther()">
+                                                    <option value="sales"> Sales </option>
+                                                    <option value="admin"> Admin </option>
+                                                    <option value="backend"> Backend </option>
+                                                    <option value="accounts"> Accounts </option>
+                                                    <option value="telecalling"> Telecalling </option>
+                                                    <option value="office"> Office </option>
+                                                    <option value="security"> Security </option>
+                                                    <option value="quality"> Quality </option>
+                                                    <option value="others"> Others </option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group" id="otherextra" style="display:none;">
+                                                <input type="text" name="other2" class="form-control w-100 d-block"  placeholder="Enter Other">
+                                            </div>
+                                            
                                             <!-- form group -->
                                             <div class="form-group">
                                                 <textarea name="message" class="form-control d-block w-100" required placeholder="Message*"></textarea>
@@ -89,6 +108,8 @@
                                         @endif
                                     </div>
                                 </div>
+
+                              
                         
                      </div>
                 </section>
@@ -98,6 +119,18 @@
 @endsection
 
 @section('script')
+<script>
+        function checkForOther(){
+            console.log("inside");
+            var otherId = document.getElementById('other');
+            if(otherId.value === 'others'){
+                document.getElementById('otherextra').style.display = 'block';
+            }else{
+                document.getElementById('otherextra').style.display = 'none';
+            }
+        }
+    </script>
+
     <script>
     $('#phone').on('keydown keyup', function(e){
         if ($(this).val().length >= 10 
@@ -107,10 +140,6 @@
             e.preventDefault();
             
         }
-    });
-
-    $(document).ready(function(){
-        $("#phone").numeric();
     });
 
     </script>

@@ -14,7 +14,8 @@ class NewsletterSubscription extends Model
         'phone',
         'resume',
         'message',
-        'type'
+        'type',
+        'others'
     ];
 
     

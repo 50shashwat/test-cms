@@ -61,6 +61,19 @@
                                             <div class="form-group">
                                                 <input name="email" type="email" class="form-control w-100 d-block" placeholder="Email">
                                             </div>
+                                            <div class="form-group">
+                                                <label for="others">Select Job Post</label>
+                                                <select name="others" class="form-control" id="other" onchange="checkForOther()">
+                                                    <option value="distributer"> Distributer </option>
+                                                    <option value="dealer"> Dealer </option>
+                                                    <option value="retailer"> Retailer </option>
+                                                    <option value="wholeseller"> WholeSeller </option>
+                                                    <option value="others"> Others </option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group" id="otherextra" style="display:none;">
+                                                <input type="text" name="other2" class="form-control w-100 d-block"  placeholder="Enter Other">
+                                            </div>
                                             <!-- form group -->
                                             <div class="form-group">
                                                 <textarea name="message" class="form-control d-block w-100" placeholder="Message*"></textarea>
@@ -78,5 +91,21 @@
                 </section>
 
 </main>
+
+@endsection
+
+@section('script')
+
+<script>
+    function checkForOther(){
+        console.log("inside");
+        var otherId = document.getElementById('other');
+        if(otherId.value === 'others'){
+            document.getElementById('otherextra').style.display = 'block';
+        }else{
+            document.getElementById('otherextra').style.display = 'none';
+        }
+    }
+</script>
 
 @endsection

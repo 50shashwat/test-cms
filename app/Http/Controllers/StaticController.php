@@ -82,16 +82,20 @@ class StaticController extends Controller
             $objDemo->resume = $destinationPath.$fileUrl;
         }
 
+        if($request->has('others')){
+            if($request->others=="others"){
+                $request->merge(['others' => $request->other2]);
+            }
+        }
+
         $objDemo->name = $request->has('name') ? $request->name: "";
         $objDemo->email =  $request->has('email') ?$request->email:"";
         $objDemo->phone = $request->has('phone') ? $request->phone:"";
         $objDemo->type =  $request->has('type') ?$request->type:"";
         $objDemo->message = $request->has('message') ? $request->message:"";
-
+        $objDemo->others = $request->has('others') ?  ($request->others=="others" ?  $request->other2 : $request->others): "" ;
         NewsletterSubscription::create(array_merge($request->all(), ['resume' => $fileUrl]));
-
         
-
         if($request->type=="careers"){
             Mail::to($request->email)->send(new ResumeConfirm());
             Mail::to('resumes@harrisonlocks.com')->send(new ContactPost($objDemo));
