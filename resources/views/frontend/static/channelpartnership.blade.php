@@ -62,7 +62,7 @@
                                                 <input name="email" type="email" class="form-control w-100 d-block" placeholder="Email">
                                             </div>
                                             <div class="form-group">
-                                                <label for="others">Select Job Post</label>
+                                                <label for="others">Select Partnership Type</label>
                                                 <select name="others" class="form-control" id="other" onchange="checkForOther()">
                                                     <option value="distributer"> Distributer </option>
                                                     <option value="dealer"> Dealer </option>
