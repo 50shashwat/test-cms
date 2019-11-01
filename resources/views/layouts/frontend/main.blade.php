@@ -22,6 +22,10 @@
 		.navbar-toggler:not(:disabled):not(.disabled){
 			margin-top:30px;
 		}
+		video{
+			width:100%;
+			height:auto;
+		}
 	</style>
 	<link rel="icon" href="favicon.jpg" type="image/x-icon"/>
 	<link rel="shortcut icon" href="favicon.jpg" type="image/x-icon"/>
