@@ -56,11 +56,15 @@ Route::prefix('/admin')->group(function(){
     Route::get('/pages/{type}','Admin\PageController@getPage')->name('admin.pages');
     Route::post('/pages/{type}','Admin\PageController@storePage')->name('admin.pages');
     Route::get('/queries/{type}','Admin\PageController@queries')->name('admin.queries');
+    Route::delete('/queries/{type}/{id}','Admin\PageController@deleteQuery');
+    Route::get('/queries/download/{type}','Admin\PageController@exportQueries');
     Route::resource('/blog', 'Admin\BlogController');
     Route::resource('/categories','Admin\CategoriesController');
     Route::resource('/subcategories','Admin\SubCategoriesController');
     Route::resource('/innercategories','Admin\InnerCategoriesController');
     Route::resource('/products','Admin\ProductController');
-    
+    Route::resource('/roles','Admin\RoleController');
+    Route::get('/popup','Admin\PopupController@edit');
+    Route::patch('/popup','Admin\PopupController@update');
 });
 

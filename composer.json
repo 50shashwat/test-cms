@@ -14,7 +14,9 @@
         "laravel/tinker": "^1.0",
         "laravel/ui": "^1.0",
         "laravelcollective/html": "^6.0",
-        "rudrarajiv/flipbooklaravel": "dev-master"
+        "maatwebsite/excel": "^3.1",
+        "rudrarajiv/flipbooklaravel": "dev-master",
+        "spatie/laravel-permission": "^3.2"
     },
     "require-dev": {
         "facade/ignition": "^1.4",

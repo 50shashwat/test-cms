@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\NewsletterSubscription;
 use App\Page;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\ListExport;
 
 class PageController extends Controller
 {
@@ -68,5 +70,15 @@ class PageController extends Controller
     public function queries($type){
         $items = NewsletterSubscription::where('type', $type)->paginate(10);
         return view('backend.queries.index', compact('items','type'));
+    }
+
+    public function deleteQuery( $type, $id){
+        $res = NewsletterSubscription::find($id)->delete();
+        $message = $res ? "Deleted Succesfully": "Unable to delete";
+        return redirect('admin/queries/'.$type)->with('message',$message);
+    }
+
+    public function exportQueries($type){
+       return Excel::download(new ListExport($type), $type.'.xlsx');
     }
 }

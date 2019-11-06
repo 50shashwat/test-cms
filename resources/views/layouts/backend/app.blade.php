@@ -151,6 +151,11 @@
             </div>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/admin/popup" >
+              <span>Popup</span>
+          </a>
+        </li>
          <!-- Nav Item - Pages Collapse Menu -->
          <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseQueries" aria-expanded="true" aria-controls="collapsePages">
