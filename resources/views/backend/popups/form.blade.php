@@ -3,7 +3,7 @@
 @if($popup->image_url!="")
 <div class="row">
     <label>Previous Popup</label>
-    <img src="{{asset('images/'.$popup->image_url)}}" style="width:100%;height:auto" />
+    <img src="{{asset('images/'.$popup->image_url)}}" style="width:50%;height:auto" />
 </div>
 @endif
 
@@ -15,11 +15,6 @@
     </div>
 </div>
 
-@if($popup->image_url!="")
-<div class="row">
-<img src="{{asset('images/'.$popup->image_url)}}" style="width:100%;height:auto" />
-</div>
-@endif
 
 <div class="form-group">
     <div class="col-md-offset-4 col-md-4">

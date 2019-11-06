@@ -253,7 +253,7 @@
             </button>
         </div>
         <div class="modal-body">
-            <img src="images/popup.jpg" alt="" style="width: 100%; height: auto" />
+            <img src="{{asset('images/'. $popup->image_url)}}" alt="" style="width: 100%; height: auto" />
         </div>
         <div class="modal-footer">
         </div>

@@ -8,6 +8,7 @@ use App\Mail\ContactPost;
 use App\Mail\ResumeConfirm;
 use App\NewsletterSubscription;
 use App\Page;
+use App\Popup;
 use App\Post;
 use Illuminate\Support\Facades\Mail;
 
@@ -19,7 +20,8 @@ class StaticController extends Controller
 
     public function home(){
         $posts = Post::orderBy('id','desc')->limit(3)->get();
-        return view('frontend.index', compact('posts'));
+        $popup = Popup::find(1);
+        return view('frontend.index', compact('posts','popup'));
     }
 
     public function about(){
