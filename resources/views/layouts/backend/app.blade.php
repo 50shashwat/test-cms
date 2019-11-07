@@ -97,19 +97,11 @@
           </a>
           <div id="collapseAbout" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
               <div class="bg-white py-2 collapse-inner rounded">
-                  <a class="collapse-item" href="/admin/pages/about-summary">Summary</a>
-                  <a class="collapse-item" href="/admin/pages/about-benefit">Benefit</a>
                   <a class="collapse-item" href="/admin/pages/mission-and-vision">Our Mission &amp; Vision</a>
                   <a class="collapse-item" href="/admin/pages/company-profile">Company Profile</a>
                   <a class="collapse-item" href="/admin/pages/message-from-ceo">Message From CEO</a>
                   <a class="collapse-item" href="/admin/pages/connect-from-fb">Connect From FB</a>
                   <a class="collapse-item" href="/admin/pages/our-clients">Our Clients</a>
-                  <div class="collapse-divider"></div>
-                  <h6 class="collapse-header">Other Sections:</h6>
-                  <a class="collapse-item" href="/admin/pages/about-section-one">Section One</a>
-                  <a class="collapse-item" href="/admin/pages/about-section-two">Section Two</a>
-                  <a class="collapse-item" href="/admin/pages/about-section-three">Section Three</a>
-                  <a class="collapse-item" href="/admin/pages/about-section-four">Section Four</a>
               </div>
           </div>
       </li>
@@ -179,10 +171,10 @@
             </a>
             <div id="collapseFooter" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="/admin/pages/footer-section-one">Footer One</a>
-                    <a class="collapse-item" href="/admin/pages/footer-section-two">Footer Two</a>
-                    <a class="collapse-item" href="/admin/pages/footer-section-three">Footer Three</a>
-                    <a class="collapse-item" href="/admin/pages/footer-section-four">Footer Four</a>
+                    <a class="collapse-item" href="/admin/pages/footer-section-one">Footer About</a>
+                    <a class="collapse-item" href="/admin/pages/footer-section-two">Footer Information</a>
+                    <a class="collapse-item" href="/admin/pages/footer-section-three">Footer Qucik Link</a>
+                    <a class="collapse-item" href="/admin/pages/footer-section-four">Footer Social Media</a>
                 </div>
             </div>
         </li>
