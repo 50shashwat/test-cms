@@ -16,12 +16,12 @@
                                     Home
                                 </a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Blog/Newsletter</li>
+                            <li class="breadcrumb-item active" aria-current="page">Blog/Announcements</li>
                         </ol>
                     </div>
                     <div class="col-12 col-md-5 d-none d-md-flex align-items-md-center justify-content-md-end">
                         <!-- title -->
-                        <strong class="title d-block text-right fontRoboto fwMedium text-capitalize text-dark">Blog/Newsletter</strong>
+                        <strong class="title d-block text-right fontRoboto fwMedium text-capitalize text-dark">Blog/Announcements</strong>
                     </div>
                 </div>
             </div>
