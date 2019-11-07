@@ -26,6 +26,10 @@
 			width:100%;
 			height:auto;
 		}
+
+		.alignRight{
+			float:right;
+		}
 	</style>
 	<link rel="icon" href="favicon.jpg" type="image/x-icon"/>
 	<link rel="shortcut icon" href="favicon.jpg" type="image/x-icon"/>
@@ -66,7 +70,7 @@
 	}
 
 	.pageMainNavigation.navbar-nav.pageMainNavigation02 .nav-link, .mainNavDropdown.dropdown-menu .dropdown-item{
-		font-size:11px;
+		font-size:13px;
 	}
 	.loginLinksList.loginLinksList02{
 		padding:0px
@@ -87,9 +91,6 @@
 		
         <!-- pageFooter -->
         @include('layouts.frontend.footer')
-		<div class="dharmendra">
-			<img src="{{asset('images/dharmendra_2.png') }}" alt="Dharmendra Brand Ambasador Harrison Lock" />	
-		</div>	
 		
 	</div>
 	<!-- include Plugins JavaScript -->

@@ -1,9 +1,9 @@
 <header id="pageHeader" class="pageHeader02">
    
-    <div class="headerFixer">
-        <div class="container relativeSm">
+    <div class="">
+        <div class=" relativeSm">
             
-            <div class="container relativeSm" style="background:#fff">
+            <div class="relativeSm" style="background:#fff;padding-left:20px;padding-right:20px">
                         <!-- pageHeaderTopBar -->
                         <div class="pageHeaderTopBar">
                             <div class="row">
@@ -34,7 +34,7 @@
                                             @csrf
                                             <div class="form-group collapse mb-0" id="searhFormCollpase">
                                                 <input type="text" class="form-control d-block" placeholder="Search&hellip;" style="border: 1px solid #ccc;padding: 5px 20px;margin: 5px;margin-right: 30px;border-radius: 12px;" name="name">
-                                                <button type="button" class="ei_icon_search buttonReset"><span class="sr-only">search</span></button>
+                                                <button type="submit" class="ei_icon_search buttonReset"><span class="sr-only">search</span></button>
                                             </div>
                                         </form>
                                           
@@ -48,7 +48,7 @@
                 <!-- logo -->
                 <div class="logo alignleft">
                     <a href="/">
-                        <img src="{{asset('images/logo_white.png') }}" alt="Harrison Locks">
+                        <img src="{{asset('images/logo.png') }}" alt="Harrison Locks">
                     </a>
                 </div>
                 <!-- pageNavHolder -->
@@ -105,7 +105,7 @@
                                                         <ul class="list-unstyled navDropdownList">
                                                             @foreach ($menuitem['subcategories'] as $menusubitem)
                                                                 @if(sizeof($menusubitem['innercategories'])==0 )
-                                                                    <li class="nav-item"><a class="dropdown-item fwMedium text-uppercase" href="/products/{{$menuitem['id']}}/{{$menusubitem['id']}}"  aria-haspopup="true" >{{$menusubitem['name']}}</a></li>
+                                                                    <li class="nav-item"><a  class="dropdown-item fwMedium text-uppercase" style="padding-left:20px" href="/products/{{$menuitem['id']}}/{{$menusubitem['id']}}"  aria-haspopup="true" >{{$menusubitem['name']}}</a></li>
                                                                 @else
                                                                 <li class="dropdown-submenu"><a class="dropdown-item fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     {{$menusubitem['name']}}
@@ -138,22 +138,14 @@
                                 </li>
                                 
                                 <li class="nav-item @if (\Request::is('achievement*')) active @endif">
-                                    <a class="nav-link fwMedium text-uppercase " href="/achievement"  aria-haspopup="true" >Achievements</a>
+                                    <a class="nav-link fwMedium text-uppercase " href="/achievement"  aria-haspopup="true" >Milestone & Achievements</a>
                                 </li>
-
-                              
-                                
-                            </ul>
-                            
-                            <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end">            
                                 <li class="nav-item @if (\Request::is('careers*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/careers"  aria-haspopup="true" >Careers</a>
                                 </li>
                                 <li class="nav-item @if (\Request::is('video-gallery*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/video-gallery">Video gallery </a>
                                 </li>
-                                
-                              
                                 
                                 <li class="nav-item  @if (\Request::is('display-and-design*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/display-and-design">Display and Design </a>
@@ -163,9 +155,19 @@
                                     <a class="nav-link fwMedium text-uppercase "  href="/channel-partnership">Channel Partnership</a>
                                 </li>
                             </ul>
+                            
+                            <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end" style="width:145px">            
+                                
+                                <li class="nav-item">
+                                <a href="#">
+                                    <img src="{{asset('images/dh_right.png') }}" alt="Dharmendra" style="height:80px; width:auto">
+                                </a>
+                                </li>
+                            </ul>
                         </div>
                     </nav>
                 </div>
+
             </div>
         </div>
     </div>
