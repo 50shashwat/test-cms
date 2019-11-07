@@ -33,7 +33,7 @@
                         </div>
                         <div class="col-12 col-md-5 d-none d-md-flex align-items-md-center justify-content-md-end">
                         <!-- title -->
-                        <strong class="title d-block text-right fontRoboto fwMedium text-capitalize text-dark">Products</strong>
+                        <strong class="title d-block text-right fontRoboto fwMedium text-capitalize text-dark">@if(isset($newArrival)) New Arrivals @else  Products @endif</strong>
                         </div>
                 </div>
                 </div>
@@ -54,7 +54,7 @@
                 </div>
                 
                 <div class="row">
-                        {{ $products->links() }}
+                      @if(!isset($newArrival))  {{ $products->links() }} @endif
                 </div>
             
                 

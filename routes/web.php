@@ -30,7 +30,7 @@ Route::get('/channel-partnership', 'StaticController@channelpartnership')->name(
 Route::get('/helpline-numbers', 'StaticController@helpline')->name('helpline');
 Route::get('/products/locks', 'ProductController@lock')->name('product-lock');
 Route::get('/products/kitchen-accessories', 'ProductController@kitchen_accessories')->name('product-kitchen-accessories');
-
+Route::get('/products/new-arrivals','ProductController@new_arrivals')->name('product-new-arrivals');
 Route::get('/home.html',function () {
     return view('frontend.index');
 });

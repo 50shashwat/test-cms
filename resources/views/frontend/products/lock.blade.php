@@ -29,7 +29,7 @@
         <!-- contactAreaBlock -->
 
         <div class="alert alert-warning">For Best Experience View in 1024*764 Resolution or above on Desktop/Laptop</div>
-        <div class="container" style="margin-bottom:60px;margin-top:60px;padding:50px">
+        <div class="container" style="margin-bottom:60px;margin-top:10px;padding:50px">
            <iframe src="{{asset('/turn-lock/index.html')}}" style="width:100%; height:800px;border:0px;padding:0px" ></iframe>
         </div>
 </main>

@@ -142,7 +142,10 @@
                                                         
                                                     </ul>
                                                 </div>
-                                            </li>       
+                                            </li> 
+                                            <li class="nav-item"><a class="dropdown-item fwMedium text-uppercase" href="/products/new-arrivals"  aria-haspopup="true" style="padding-left:20px;" >New Arrivals</a></li>
+                                                  
+
                                         </ul>
                                     </div>
                                 </li>

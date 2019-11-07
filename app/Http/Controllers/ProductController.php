@@ -83,4 +83,10 @@ class ProductController extends Controller
         //$products = collect($products)->paginate(9);
         return view('frontend.page.search', compact('products'));
     }
+
+    public function new_arrivals(){
+       $products =  Product::where('id','>',1)->with('category','subcategory','innercategory')->orderBy('id','desc')->limit(18)->get();
+       $newArrival = "set";
+       return view('frontend.products.index',compact('products','newArrival'));
+    }
 }
