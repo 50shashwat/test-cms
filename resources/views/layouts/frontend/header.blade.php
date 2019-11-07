@@ -129,6 +129,20 @@
                                                 @endif
 
                                             @endforeach
+
+                                            <li class="dropdown-submenu"><a class="dropdown-item fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                E-Brochure
+                                                </a>
+                                                                
+                                                <div class="dropdown-menu mainNavDropdown text-uppercase">
+                                                    <!-- navDropdownList -->
+                                                    <ul class="list-unstyled navDropdownList">
+                                                        <li class="nav-item"><a  class="dropdown-item fwMedium text-uppercase" style="padding-left:20px" href="/products/locks"  aria-haspopup="true" >Locks </a></li>
+                                                        <li class="nav-item"><a  class="dropdown-item fwMedium text-uppercase" style="padding-left:20px" href="/products/kitchen-accessories"  aria-haspopup="true" >Kitchen Accessories</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </li>       
                                         </ul>
                                     </div>
                                 </li>
