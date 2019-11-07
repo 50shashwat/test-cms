@@ -75,6 +75,12 @@ class StaticController extends Controller
             'email' => ['required', 'string', 'email', 'max:191']
         ]);
 
+        if($request->has('type')!='newsletter'){
+            $request->validate([
+                'g-recaptcha-response' => 'required|recaptcha'
+            ]);
+        }
+
         $fileUrl = "";
         if($request->has('resume') &&  $request->file('resume')){
             $file = $request->file('resume');

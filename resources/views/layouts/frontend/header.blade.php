@@ -77,7 +77,7 @@
                                                 <a class="dropdown-item" href="/about/company-profile">Company Profile</a>
                                                 <a class="dropdown-item" href="/about/mission-and-vision">Mission &amp; Vision</a>
                                                 <a class="dropdown-item" href="/about/message-from-ceo">Message From CEO </a>
-                                                <a class="dropdown-item" href="/about/connect-from-fb">Connect From FB</a>
+                                                <a class="dropdown-item" href="/about/connect-from-fb">Connect To Social Media</a>
                                                 <a class="dropdown-item" href="/about/our-clients">Our Clients</a>
                                             </li>
                                         </ul>

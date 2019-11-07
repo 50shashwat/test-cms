@@ -78,8 +78,21 @@
                                             <div class="form-group">
                                                 <textarea name="message" class="form-control d-block w-100" placeholder="Message*"></textarea>
                                             </div>
+                                            
+                                            @if(env('GOOGLE_RECAPTCHA_KEY'))
+                                                <div class="g-recaptcha"
+                                                    data-sitekey="{{env('GOOGLE_RECAPTCHA_KEY')}}">
+                                                </div>
+                                            @endif
+
+                                            @if($errors->any())
+                                                <div class="alert {{ ($errors->first('g-recaptcha-response')) ? 'has-error'  :''}}" style="color:red">
+                                                    {{ $errors->first('g-recaptcha-response')? $errors->first('g-recaptcha-response') : "" }}
+                                                </div>
+                                            @endif
+
                                             <!-- button -->
-                                            <button class="btn btnTheme d-block w-100 text-uppercase" type="submit" data-hover="Get A Quote">
+                                            <button class="btn btnTheme d-block w-100 text-uppercase" type="submit" data-hover="Submit Query">
                                                 <span class="d-block btnText">Submit Query</span>
                                             </button>
                                         </form>
@@ -107,5 +120,7 @@
         }
     }
 </script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 @endsection
