@@ -15,7 +15,7 @@
                                         Home
                                 </a>
                                 </li>
-                                <li class="breadcrumb-item">Product</li>
+                                <li class="breadcrumb-item">@if(isset($newarrival)) New Arrivals  @else Products  @endif</li>
                                 
                                 @if(isset($category))
                                         <li class="breadcrumb-item " aria-current="page"> {!! ucfirst($category->name) !!} </li>
@@ -52,6 +52,11 @@
                                 </div>
                         @endforeach
                 </div>
+                
+                <div class="row">
+                        {{ $products->links() }}
+                </div>
+            
                 
         </div>
 </main>

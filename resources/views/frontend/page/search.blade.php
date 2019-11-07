@@ -60,6 +60,17 @@
                             </div>
                             
                     @endforeach
+
+                    @if(count($products)==0)
+                        <div class="alert alert-warning form-control" style="text-align:center">
+                            <h4>No Result Found</h4>
+                        </div>
+                    @endif
+                    
+                <div class="row">
+                    {{ $products->links() }}
+                </div>
+            
                 </div>
             </div>
         </section>
