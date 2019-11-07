@@ -156,11 +156,11 @@
                                 </li>
                             </ul>
                             
-                            <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end" style="width:145px">            
+                            <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end" style="width:180px">            
                                 
                                 <li class="nav-item">
                                 <a href="#">
-                                    <img src="{{asset('images/dh_right.png') }}" alt="Dharmendra" style="height:80px; width:auto">
+                                    <img src="{{asset('images/dh_right.png') }}" alt="Dharmendra" style="height:100px; width:auto">
                                 </a>
                                 </li>
                             </ul>
