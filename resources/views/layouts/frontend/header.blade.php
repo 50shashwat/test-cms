@@ -11,10 +11,10 @@
                                     <!-- topBarContactList -->
                                     <ul class="list-unstyled topBarContactList topBarContactList02 align-items-center mb-0 d-none d-md-flex">
                                         <li>
-                                            <a href="#">
+                                            <div>
                                                 <i class="fas fa-phone fa-flip-horizontal icn"><span class="sr-only">icon</span></i>
-                                                <span class="d-none d-lg-inline">1-800-103-5795</span>
-                                            </a>
+                                                <span class="d-none d-lg-inline">{{$contact->phone1}}</span>
+                                            </div>
                                         </li>
                                         <li>
                                             <a href="/helpline-numbers">
@@ -145,7 +145,6 @@
                                             </li> 
                                             <li class="nav-item"><a class="dropdown-item fwMedium text-uppercase" href="/products/new-arrivals"  aria-haspopup="true" style="padding-left:20px;" >New Arrivals</a></li>
                                                   
-
                                         </ul>
                                     </div>
                                 </li>

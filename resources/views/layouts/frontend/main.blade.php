@@ -75,6 +75,9 @@
 	.loginLinksList.loginLinksList02{
 		padding:0px
 	}
+	.pageBdWrapNav .title{
+		font-size: 28px;
+	}
 	</style>
 	@yield('head')
 	<!-- include jQuery library -->

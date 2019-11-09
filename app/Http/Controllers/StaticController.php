@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Banner;
 use App\Category;
 use App\Mail\ContactConfirm;
 use App\Mail\ContactPost;
@@ -21,7 +22,8 @@ class StaticController extends Controller
     public function home(){
         $posts = Post::orderBy('id','desc')->limit(3)->get();
         $popup = Popup::find(1);
-        return view('frontend.index', compact('posts','popup'));
+        $banners = Banner::all();
+        return view('frontend.index', compact('posts','popup','banners'));
     }
 
     public function about(){

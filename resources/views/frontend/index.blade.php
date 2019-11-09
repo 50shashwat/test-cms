@@ -3,106 +3,73 @@
 
 @section('script')
     <script>
-            $('#popup').modal('show');
+           @if($popup->is_active==1)  $('#popup').modal('show'); @endif
     </script>
+    <style>
+    .custom-btn-handle{
+        font-size: 24px;
+        line-height: 1;
+        min-width: 270px;
+        border-radius: 99px;
+        background-color:#000034;
+        border-color:transparent;
+        letter-spacing: 1.3px;
+        padding: 0;
+        border: 0;
+        display: inline-block;
+        font-weight: 500;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+    .custom-banner{
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+    }
+    .custom-res-height{
+        height: 550px
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .custom-res-height{
+            height: 350px
+        }
+    }
+    </style>
 @endsection
 
 @section('content')
 <main>
     <!-- bannerSliderBlock -->
-    <section class="bannerSliderBlock bsbOffsetTop bannerSliderBlock02 bannerSlider w-100 slickSlider text-center text-white">
+    <section class="bannerSliderBlock bsbOffsetTop bannerSliderBlock02 bannerSlider w-100 slickSlider text-center text-white" >
         <!-- bannerSliderSlide -->
-        <div class="bannerSliderSlide">
+        @foreach($banners as $banner)
+        <div class="bannerSliderSlide custom-res-height">
             <!-- bannerSlideHolder -->
-            <div class="container bannerSlideHolder bannerSlideHolder02 position-relative">
+            <div style="background:rgb(0, 0, 0,0.6);position: absolute;z-index: 10000;top: 0;left: 0;width: 100%;height: 100%;">
+            <div class="container bannerSlideHolder bannerSlideHolder02 position-relative custom-res-height"  >
                 <div class="align">
                     <!-- bannerSlideHeader -->
                     <header class="bannerSlideHeader">
-                        <h1 class="text-uppercase fwSemiBold fontBase">DOOR HANDLES</h1>
-                        <p>Harrison Locks &amp; Hardware Solutions</p>
+                        <h1 class="text-uppercase fwSemiBold fontBase">{{$banner->title}}</h1>
+                        <p>{{$banner->description}}</p>
                     </header>
                     <!-- btnHolder -->
-                  
                 </div>
             </div>
-            <!-- bannerBlockSlideBg -->
-            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/banner_1.jpg);">
-                <img class="sr-only" src="images/banner_1.jpg" alt="image description">
-            </span>
-        </div>
-        <!-- bannerSliderSlide -->
-        <div class="bannerSliderSlide">
-            <!-- bannerSlideHolder -->
-            <div class="container bannerSlideHolder bannerSlideHolder02 position-relative">
-                <div class="align">
-                    <!-- bannerSlideHeader -->
-                    <header class="bannerSlideHeader">
-                        <h1 class="text-uppercase fwSemiBold fontBase">VELV'E' DRAWER TANTEM 'E' BOXES</h1>
-                        <p>Having the best sliding mechanism</p>
-                    </header>
-                    
-                </div>
             </div>
+            
+            <img src="{{asset('images/'.$banner->background_image)}}" class="custom-banner custom-res-height" />
             <!-- bannerBlockSlideBg -->
-            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/banner_2.jpg);">
-                <img class="sr-only" src="images/banner_2.jpg" alt="image description">
-            </span>
-        </div>
-        <!-- bannerSliderSlide -->
-        <div class="bannerSliderSlide">
-            <!-- bannerSlideHolder -->
-            <div class="container bannerSlideHolder bannerSlideHolder02 position-relative">
-                <div class="align">
-                    <!-- bannerSlideHeader -->
-                    <header class="bannerSlideHeader">
-                        <h1 class="text-uppercase fwSemiBold fontBase">CABINET HINGES</h1>
-                        <p>Furniture Hardware</p>
-                    </header>
-                    <!-- btnHolder -->
-                    
-                </div>
-            </div>
-            <!-- bannerBlockSlideBg -->
-            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/banner_3.jpg);">
-                <img class="sr-only" src="images/banner_3.jpg" alt="image description">
-            </span>
+            {{-- <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url('{{asset('images/'.$banner->background_image)}}');">
+                <img class="sr-only" src="{{asset('images/').$banner->background_image}}" alt="{{$banner->title}}">
+            </span> --}}
         </div>
 
-        <!-- bannerSliderSlide -->
-        <div class="bannerSliderSlide">
-            <!-- bannerSlideHolder -->
-            <div class="container bannerSlideHolder bannerSlideHolder02 position-relative">
-                <div class="align">
-                    <!-- bannerSlideHeader -->
-                    <header class="bannerSlideHeader">
-                        <h1 class="text-uppercase fwSemiBold fontBase">The Kitchen</h1>
-                        <p>For Added Comfort, Convenience & Ease that a Modern Kitchen Looks for.</p>
-                    </header>
-                </div>
-            </div>
-            <!-- bannerBlockSlideBg -->
-            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/img04.jpg);">
-                <img class="sr-only" src="images/img04.jpg" alt="image description">
-            </span>
-        </div>
-
-        <!-- bannerSliderSlide -->
-        <div class="bannerSliderSlide">
-            <!-- bannerSlideHolder -->
-            <div class="container bannerSlideHolder bannerSlideHolder02 position-relative">
-                <div class="align">
-                    <!-- bannerSlideHeader -->
-                    <header class="bannerSlideHeader">
-                        <h1 class="text-uppercase fwSemiBold fontBase">DOOR CLOSER</h1>
-                        <p></p>
-                    </header>
-                </div>
-            </div>
-            <!-- bannerBlockSlideBg -->
-            <span class="bgCover bannerBlockSlideBg d-block position-absolute" style="background-image: url(images/banners/img05.jpg);">
-                <img class="sr-only" src="images/banners/img05.jpg" alt="RM600 Door Closer">
-            </span>
-        </div>
+        @endforeach
+        
     </section>
     
     <!-- wcuBlock -->
@@ -172,12 +139,12 @@
                         <p>Do call us here</p>
                     </div>
                     <div class="col-12 col-md-4 text-md-right">
-                        <a href="#" class="btn btnTheme btnThemeWhiteInverse fontRoboto btnRoudedLarge" data-hover="1-800-103-5795">
+                        <div class=" custom-btn-handle ">
                             <span class="btnText d-block">
                                 <i class="ei_icon_phone btnIcn"><span class="sr-only">icon</span></i>
-                                <span>1-800-103-5795</span>
+                                <span>{{$contact->phone1}}</span>
                             </span>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -253,7 +220,11 @@
             </button>
         </div>
         <div class="modal-body">
-            <img src="{{asset('images/'. $popup->image_url)}}" alt="" style="width: 100%; height: auto" />
+            @if($popup->is_image)
+                <img src="{{asset('images/'. $popup->image_url)}}" alt="" style="width: 100%; height: auto" />
+            @else
+                <iframe style="width:100%" height="315" src="{{$popup->video_url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            @endif
         </div>
         <div class="modal-footer">
         </div>

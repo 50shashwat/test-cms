@@ -66,5 +66,8 @@ Route::prefix('/admin')->group(function(){
     Route::resource('/roles','Admin\RoleController');
     Route::get('/popup','Admin\PopupController@edit');
     Route::patch('/popup','Admin\PopupController@update');
+    Route::get('/displaycontact','Admin\PageController@editDisplayContact');
+    Route::patch('/displaycontact','Admin\PageController@updateDisplayContact');
+    Route::resource('/banners','Admin\BannerController');
 });
 

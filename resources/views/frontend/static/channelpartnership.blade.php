@@ -64,7 +64,7 @@
                                             <div class="form-group">
                                                 <label for="others">Select Partnership Type</label>
                                                 <select name="others" class="form-control" id="other" onchange="checkForOther()">
-                                                    <option value="distributer"> Distributer </option>
+                                                    <option value="distributor"> Distributor </option>
                                                     <option value="dealer"> Dealer </option>
                                                     <option value="retailer"> Retailer </option>
                                                     <option value="wholeseller"> WholeSeller </option>

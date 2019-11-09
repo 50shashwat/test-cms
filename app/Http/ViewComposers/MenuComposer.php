@@ -3,6 +3,7 @@
 namespace App\Http\ViewComposers;
 
 use App\Category;
+use App\Contact;
 use Illuminate\View\View;
 use App\Repositories\UserRepository;
 use App\Menu;
@@ -18,10 +19,11 @@ class MenuComposer
      */
     public function compose(View $view)
     {
-        
+        $contacts = Contact::first();
         $menus =  Category::with(['subcategories.innercategories'])->get();
         
         $view->with('menus', $menus);
+        $view->with('contact',$contacts);
     }
 
 }

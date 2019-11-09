@@ -85,6 +85,14 @@
               <span>Blog</span>
           </a>
       </li>
+
+      
+      <li class="nav-item">
+          <a class="nav-link collapsed" href="/admin/banners" >
+              <i class="fas fa-fw fa-file"></i>
+              <span>Banners</span>
+          </a>
+      </li>
     
       <!-- Heading -->
       <!-- Nav Item - User Information -->
@@ -118,6 +126,7 @@
                   <a class="collapse-item" href="/admin/pages/contact-head-office">Head Office</a>
                   <a class="collapse-item" href="/admin/pages/contact-registered-office">Registered Office</a>
                   <a class="collapse-item" href="/admin/pages/contact-branch">Branch</a>
+                  <a class="collapse-item" href="/admin/displaycontact">Contact Details</a>
               </div>
           </div>
       </li>
@@ -145,6 +154,8 @@
 
         <li class="nav-item">
           <a class="nav-link collapsed" href="/admin/popup" >
+            
+            <i class="fas fa-fw fa-file"></i>
               <span>Popup</span>
           </a>
         </li>

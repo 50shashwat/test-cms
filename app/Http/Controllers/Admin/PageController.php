@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Banner;
+use App\Contact;
 use App\Http\Controllers\Controller;
 use App\NewsletterSubscription;
 use App\Page;
@@ -80,5 +82,18 @@ class PageController extends Controller
 
     public function exportQueries($type){
        return Excel::download(new ListExport($type), $type.'.xlsx');
+    }
+
+
+    public function updateDisplayContact(Request $request){
+        $banner = Contact::find(1);
+        $banner->update($request->all());
+        return redirect('admin/displaycontact')->with('message', 'Updated Successfully');
+
+    }
+
+    public function editDisplayContact(){
+        $contact = Contact::find(1);
+        return view('backend.pages.displaycontact', compact('contact'));
     }
 }

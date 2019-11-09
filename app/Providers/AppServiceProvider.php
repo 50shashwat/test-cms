@@ -31,6 +31,6 @@ class AppServiceProvider extends ServiceProvider
         Validator::extend('recaptcha', 'App\\Validators\\ReCaptcha@validate');
         Schema::defaultStringLength(191);
         View::composer(['layouts.frontend.footer'], NavigationComposer::class);
-        View::composer(['layouts.frontend.header'], MenuComposer::class);
+        View::composer(['layouts.frontend.header','frontend.index'], MenuComposer::class);
     }
 }

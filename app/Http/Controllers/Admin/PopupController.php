@@ -91,7 +91,9 @@ class PopupController extends Controller
             $featured_image = $fileUrl;
         }
         $popup->image_url = $featured_image==""? $popup->image_url: $featured_image;
-        
+        $popup->is_active = $request->is_active;
+        $popup->is_image = $request->is_image;
+        $popup->video_url = $request->video_url;
         
         $popup->update();
         
