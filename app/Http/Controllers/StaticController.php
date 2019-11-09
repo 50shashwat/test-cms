@@ -52,8 +52,9 @@ class StaticController extends Controller
     }
 
     public function carpenterpathshala(){
-        $content = Page::where('type','carpenter-pathshala')->first()->content;
-        return view('frontend.static.carpenterpathshala', compact('content'));
+        $indiasServiceCenter = Page::where('type','indias-service-centre')->first()->content;
+        $infoAboutService = Page::where('type','info-about-service')->first()->content;
+        return view('frontend.static.carpenterpathshala', compact('indiasServiceCenter','infoAboutService'));
     }
 
     public function displaydisign(){

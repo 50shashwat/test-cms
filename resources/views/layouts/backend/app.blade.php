@@ -130,6 +130,18 @@
               </div>
           </div>
       </li>
+      <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseApplication" aria-expanded="true" aria-controls="collapseApplication">
+              <i class="fas fa-fw fa-folder"></i>
+              <span>Applications &amp; Solutions</span>
+          </a>
+          <div id="collapseApplication" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+              <div class="bg-white py-2 collapse-inner rounded">
+                  <a class="collapse-item" href="/admin/pages/info-about-service">Info About Service</a>
+                  <a class="collapse-item" href="/admin/pages/indias-service-centre">India's Service Center</a>
+              </div>
+          </div>
+      </li>
       <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
@@ -140,7 +152,6 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="/admin/pages/video-gallary">Video Gallary</a>
                     <a class="collapse-item" href="/admin/pages/display-design">Display &map; Design</a>
-                    <a class="collapse-item" href="/admin/pages/carpenter-pathshala">Carpenter Pathshala</a>
                     <a class="collapse-item" href="/admin/pages/achievements">Achievements</a>
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Other Pages:</h6>

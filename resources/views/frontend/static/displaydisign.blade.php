@@ -33,7 +33,9 @@
         <section class="contactAreaBlock contentBlock">
 
             <div class="container" style="text-align:center;padding:40px">
-               {!! $content !!} 
+                    
+                            {!! $content !!} 
+                    
             </div>
         </section>
 </main>
