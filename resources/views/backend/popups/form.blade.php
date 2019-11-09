@@ -34,6 +34,8 @@
             {!! Form::text('video_url', null, ('' == 'required') ? ['class' => 'form-control'] : ['class' => 'form-control']) !!}
             {!! $errors->first('video_url', '<p class="help-block">:message</p>') !!}
         </div>
+        <br />
+        <a href="/videos/how_to.mkv" >Click Here</a> To Know How To Upload Youtube Video 
     </div>
 
 </div>
