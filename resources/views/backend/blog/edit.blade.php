@@ -13,42 +13,43 @@
                 {{ session('success') }}
             </div>
         @endif
-        <form action="/admin/blog/{{$post->id}}" method="put" >
-            @csrf
+        {!! Form::model($post, [
+            'method' => 'PUT',
+            'url' => ['/admin/blog',$post->id],
+            'class' => 'form-horizontal',
+            'files' => true
+        ]) !!}
+        
             <input type="hidden" name="id" value="{{$post->id}}" />
+            <br>
+
+            {!! Form::label('title', 'Blog Title*', ['class' => 'col-md-4 control-label']) !!}
+            <div class="col-md-6">
+                {!! Form::text('title', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) !!}
+                {!! $errors->first('title', '<p class="help-block">:message</p>') !!}
+            </div>
+            <br>
             
-            <div class="form-group row">
-                <label for="title" class="col-md-4 col-form-label text-md-right">{{ __('Blog Title') }}</label>
-
-                <div class="col-md-6">
-                    <input required type="text" class="form-control" name="title" >
-                    
-                    @error('title')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                </div>
+            {!! Form::label('slug', 'Slug*', ['class' => 'col-md-4 control-label']) !!}
+            <div class="col-md-6">
+                {!! Form::text('slug', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) !!}
+                {!! $errors->first('slug', '<p class="help-block">:message</p>') !!}
             </div>
+            <br>
 
-            <div class="form-group row">
-                <label for="slug" class="col-md-4 col-form-label text-md-right">{{ __('slug') }}</label>
-
-                <div class="col-md-6">
-                    <input required type="text" class="form-control" name="slug" >
-                    
-                    @error('slug')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                </div>
-            </div>
-
+            <label>Content*</label>
             <textarea id="editor" name="content" class="summernote"></textarea>
             <br>
+            
+            {!! Form::label('posted_at', 'Posted At*', ['class' => 'col-md-4 control-label']) !!}
+            <div class="col-md-6">
+                {!! Form::text('posted_at', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) !!}
+                {!! $errors->first('posted_at', '<p class="help-block">:message</p>') !!}
+            </div>
+            <br>
             <input type="submit" name="submit" value="Update" class="btn btn-primary" />
-        </form>
+            
+        {!! Form::close() !!}
     </div>
 
 @endsection
@@ -63,7 +64,7 @@
         height:300,
         });
 
-        var content = {!! json_encode($page->content) !!};
+        var content = {!! json_encode($post->content) !!};
         //set the content to summernote using `code` attribute.
         $('#editor').summernote('code', content);
 
