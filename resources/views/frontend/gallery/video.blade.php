@@ -11,7 +11,7 @@
                 <!-- breadcrumb -->
                 <ol class="breadcrumb pageBreadcrumb m-0 p-0 text-capitalize">
                     <li class="breadcrumb-item">
-                        <a href="home.html">
+                        <a href="/">
                             <i class="fas fa-home icn"><span class="sr-only">icon</span></i>
                             Home
                         </a>
