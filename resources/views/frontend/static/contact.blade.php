@@ -72,12 +72,8 @@
                                             <div class="form-group">
                                                 <textarea name="message" class="form-control d-block w-100" placeholder="Message*"></textarea>
                                             </div>
-                                            
-                                            @if(env('GOOGLE_RECAPTCHA_KEY'))
-                                                <div class="g-recaptcha"
-                                                    data-sitekey="{{env('GOOGLE_RECAPTCHA_KEY')}}">
-                                                </div>
-                                            @endif
+
+                                            {!! htmlFormSnippet() !!}
 
                                             @if($errors->any())
                                                 <div class="alert {{ ($errors->first('g-recaptcha-response')) ? 'has-error'  :''}}" style="color:red">

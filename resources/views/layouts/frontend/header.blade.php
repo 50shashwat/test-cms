@@ -65,9 +65,9 @@
                         <div class="collapse navbar-collapse mainNavCollapse mainNavCollapse02" id="pageMainNavCollapse">
                             <!-- pageMainNavigation navbar nav -->
                             <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end">
-                                <li class="nav-item @if (\Request::is('/')) active @endif">
+                                {{-- <li class="nav-item @if (\Request::is('/')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/"  aria-haspopup="true" >Home</a>
-                                </li>
+                                </li> --}}
 
                                 <li class="nav-item dropdown  @if (\Request::is('about*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
@@ -163,6 +163,11 @@
                                     <a class="nav-link fwMedium text-uppercase " href="/video-gallery">Video gallery </a>
                                 </li>
                                 
+                            </ul>
+                            
+                            <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end" >            
+                                
+                                
                                 <li class="nav-item  @if (\Request::is('display-and-design*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/display-and-design">Display and Design </a>
                                 </li>
@@ -170,13 +175,9 @@
                                 <li class="nav-item  @if (\Request::is('channel-partnership*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase "  href="/channel-partnership">Channel Partnership</a>
                                 </li>
-                            </ul>
-                            
-                            <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end" style="width:180px">            
-                                
-                                <li class="nav-item">
+                                <li class="nav-item" style="width:140px">
                                 <a href="#">
-                                    <img src="{{asset('images/dh_right.png') }}" alt="Dharmendra" style="height:100px; width:auto">
+                                    <img src="{{asset('images/dh_right.png') }}" alt="Dharmendra" style="height:90px; width:auto">
                                 </a>
                                 </li>
                             </ul>

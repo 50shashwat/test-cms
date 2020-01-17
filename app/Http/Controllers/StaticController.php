@@ -72,10 +72,13 @@ class StaticController extends Controller
     }
 
     public function sendContact(Request $request){
-        
+
+
         $objDemo = new \stdClass();
         $request->validate([
-            'email' => ['required', 'string', 'email', 'max:191']
+            'email' => ['required',
+                'g-recaptcha-response' => 'recaptcha',
+                'string', 'email', 'max:191']
         ]);
 
         if($request->has('type')!='newsletter'){

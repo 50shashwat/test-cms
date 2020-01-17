@@ -13,10 +13,12 @@
                     <div class="col-12 col-md-5">
                         
                         <!-- input group -->
+                        {!! htmlFormSnippet() !!}
                         <div class="input-group">
                                 @csrf
                                 <input type="hidden" name="type" value="newsletter" />
                                 <input name="email" type="email" class="form-control" placeholder="Your Email">
+
                                 <div class="input-group-append">
                                     <!-- button -->
                                     <button class="btn btnTheme text-uppercase" type="submit" data-hover="Send">
