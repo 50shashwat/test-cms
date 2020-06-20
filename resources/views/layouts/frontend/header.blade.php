@@ -1,8 +1,8 @@
 <header id="pageHeader" class="pageHeader02">
-   
+
     <div class="">
         <div class=" relativeSm">
-            
+
             <div class="relativeSm" style="background:#fff;padding-left:20px;padding-right:20px">
                         <!-- pageHeaderTopBar -->
                         <div class="pageHeaderTopBar">
@@ -27,7 +27,7 @@
                                 <div class="col-9 col-lg-6 d-flex justify-content-end position-static">
                                     <!-- topBarSearchForm -->
                                     <!-- loginLinksList -->
-                                    
+
                                     <ul class="list-unstyled loginLinksList loginLinksList02 text-capitalize d-flex mb-0">
                                         <form action="/search" method="post" class="topBarSearchForm topBarSearchForm02 ">
                                             <!-- searhFormCollpase -->
@@ -37,7 +37,7 @@
                                                 <button type="submit" class="ei_icon_search buttonReset"><span class="sr-only">search</span></button>
                                             </div>
                                         </form>
-                                          
+
                                     </ul>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                 <!-- pageNavHolder -->
                 <div class="pageNavHolder alignright d-flex justify-content-end align-items-md-start">
                     <!-- topBarSearchFormOpener -->
-                    
+
                     <!-- pageNav navbar -->
                     <nav id="pageNav" class="navbar navbar-expand-lg order-lg-1">
                         <!-- pageMainNavOpener -->
@@ -99,7 +99,7 @@
                                                     <li class="dropdown-submenu"><a class="dropdown-item fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         {!! $menuitem['name'] !!}
                                                     </a>
-                                                                    
+
                                                     <div class="dropdown-menu mainNavDropdown text-uppercase">
                                                         <!-- navDropdownList -->
                                                         <ul class="list-unstyled navDropdownList">
@@ -110,13 +110,13 @@
                                                                 <li class="dropdown-submenu"><a class="dropdown-item fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                                     {{$menusubitem['name']}}
                                                                 </a>
-                                                                                    
+
                                                                     <div class="dropdown-menu mainNavDropdown text-uppercase">
                                                                         <!-- navDropdownList -->
                                                                         <ul class="list-unstyled navDropdownList">
                                                                             @foreach ($menusubitem['innercategories'] as $menuinneritem)
                                                                         <li class="nav-item"><a class="dropdown-item fwMedium text-uppercase" href="/products/{{$menuitem['id']}}/{{$menusubitem['id']}}/{{$menuinneritem['id']}}"  aria-haspopup="true" >{{$menuinneritem['name']}}</a></li>
-                                                                         
+
                                                                             @endforeach
                                                                         </ul>
                                                                     </div>
@@ -133,18 +133,19 @@
                                             <li class="dropdown-submenu"><a class="dropdown-item fwMedium text-uppercase dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 E-Brochure
                                                 </a>
-                                                                
+
                                                 <div class="dropdown-menu mainNavDropdown text-uppercase">
                                                     <!-- navDropdownList -->
                                                     <ul class="list-unstyled navDropdownList">
                                                         <li class="nav-item"><a  class="dropdown-item fwMedium text-uppercase" style="padding-left:20px" href="/products/locks"  aria-haspopup="true" >Locks </a></li>
                                                         <li class="nav-item"><a  class="dropdown-item fwMedium text-uppercase" style="padding-left:20px" href="/products/kitchen-accessories"  aria-haspopup="true" >Kitchen Accessories</a></li>
-                                                        
+
                                                     </ul>
                                                 </div>
-                                            </li> 
+                                            </li>
                                             <li class="nav-item"><a class="dropdown-item fwMedium text-uppercase" href="/products/new-arrivals"  aria-haspopup="true" style="padding-left:20px;" >New Arrivals</a></li>
-                                                  
+                                            <li class="nav-item"><a class="dropdown-item fwMedium text-uppercase" href="/safety"  aria-haspopup="true" style="padding-left:20px;" >Safety</a></li>
+
                                         </ul>
                                     </div>
                                 </li>
@@ -152,7 +153,7 @@
                                 <li class="nav-item @if (\Request::is('application*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/application-solutions">Applications &amp; Solutions</a>
                                 </li>
-                                
+
                                 <li class="nav-item @if (\Request::is('achievement*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/achievement"  aria-haspopup="true" >Milestone & Achievements</a>
                                 </li>
@@ -162,16 +163,16 @@
                                 <li class="nav-item @if (\Request::is('video-gallery*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/video-gallery">Video gallery </a>
                                 </li>
-                                
+
                             </ul>
-                            
-                            <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end" >            
-                                
-                                
+
+                            <ul class="navbar-nav pageMainNavigation pageMainNavigation02 justify-content-md-end" >
+
+
                                 <li class="nav-item  @if (\Request::is('display-and-design*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase " href="/display-and-design">Display and Design </a>
                                 </li>
-                                
+
                                 <li class="nav-item  @if (\Request::is('channel-partnership*')) active @endif">
                                     <a class="nav-link fwMedium text-uppercase "  href="/channel-partnership">Channel Partnership</a>
                                 </li>

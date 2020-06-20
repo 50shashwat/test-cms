@@ -39,7 +39,7 @@ class StaticController extends Controller
         return view('frontend.static.about', compact('content'));
     }
 
-    public function contact(){ 
+    public function contact(){
         $content = array();
         $content[] = Page::where('type','contact-head-office')->first()->content;
         $content[] = Page::where('type','contact-registered-office')->first()->content;
@@ -70,6 +70,12 @@ class StaticController extends Controller
         $content = Page::where('type','helpline')->first()->content;
         return view('frontend.static.helpline', compact('content'));
     }
+
+    public function safety(){
+        $content = Page::where('type','safety')->first()->content;
+        return view('frontend.static.safety', compact('content'));
+    }
+
 
     public function sendContact(Request $request){
 
@@ -109,7 +115,7 @@ class StaticController extends Controller
         $objDemo->message = $request->has('message') ? $request->message:"";
         $objDemo->others = $request->has('others') ?  ($request->others=="others" ?  $request->other2 : $request->others): "" ;
         NewsletterSubscription::create(array_merge($request->all(), ['resume' => $fileUrl]));
-        
+
         if($request->type=="careers"){
             Mail::to($request->email)->send(new ResumeConfirm());
             Mail::to('resumes@harrisonlocks.com')->send(new ContactPost($objDemo));
@@ -117,12 +123,12 @@ class StaticController extends Controller
         if($request->type=="newsletter"){
             //do nothing
         }
-        if($request->type !="careers" && $request->type != "newsletter"){       
+        if($request->type !="careers" && $request->type != "newsletter"){
             Mail::to($request->email)->send(new ContactConfirm());
             Mail::to('exports@harrisonlocks.com')->send(new ContactPost($objDemo));
         }
         return back()->with('success', 'Message Sent Successfully');
-        
+
     }
 
     public function achievements(){
@@ -135,13 +141,13 @@ class StaticController extends Controller
         return view('frontend.static.terms', compact('content'));
     }
 
-    
+
     public function privacy(){
         $content = Page::where('type','privacy')->first()->content;
         return view('frontend.static.privacy', compact('content'));
     }
 
-    
+
     public function disclaimer(){
         $content = Page::where('type','disclaimer')->first()->content;
         return view('frontend.static.disclaimer', compact('content'));

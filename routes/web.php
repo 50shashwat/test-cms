@@ -49,6 +49,8 @@ Route::get('/achievement', 'StaticController@achievements')->name('achievements'
 Route::get('/blog-show/{id}','BlogController@show')->name('blog.show');
 Route::post('/branding','FormController@orderForms');
 
+Route::get('/safety', 'StaticController@safety')->name('safety');
+
 Route::prefix('/admin')->group(function(){
     Route::get('/dashboard','Admin\AdminController@index')->name('admin.dashboard');
     Route::get('/login', 'Admin\LoginController@showLoginForm')->name('admin.login');

@@ -55,8 +55,8 @@
         Admins
       </div>
 
-    
-     
+
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -75,10 +75,10 @@
           </div>
       </li>
 
-      
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
-      
+
       <li class="nav-item">
           <a class="nav-link collapsed" href="/admin/blog" >
               <i class="fas fa-fw fa-file"></i>
@@ -86,14 +86,14 @@
           </a>
       </li>
 
-      
+
       <li class="nav-item">
           <a class="nav-link collapsed" href="/admin/banners" >
               <i class="fas fa-fw fa-file"></i>
               <span>Banners</span>
           </a>
       </li>
-    
+
       <!-- Heading -->
       <!-- Nav Item - User Information -->
 
@@ -165,11 +165,19 @@
 
         <li class="nav-item">
           <a class="nav-link collapsed" href="/admin/popup" >
-            
+
             <i class="fas fa-fw fa-file"></i>
               <span>Popup</span>
           </a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="/admin/pages/safety" >
+
+              <i class="fas fa-fw fa-file"></i>
+                <span>Safety</span>
+            </a>
+          </li>
          <!-- Nav Item - Pages Collapse Menu -->
          <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseQueries" aria-expanded="true" aria-controls="collapsePages">
